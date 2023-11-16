@@ -1,43 +1,156 @@
 <!DOCTYPE html>
 <html>
+  <!-- Add Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body{
-        background-color: rgb(17, 16, 16);
+    body {
+      background-color: rgb(255, 255, 255);
+      margin: 0;
     }
-    h1 {
-        display: block;
-        font-family: 'Times New Roman', Times, serif;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        text-decoration: underline;
-        margin-bottom: 4px;
+    h4{
+      color: white;
+      text-align: center;
     }
-    p{
-        text-align: center;
-        margin-top: 0;
-        color: white;
+    /* h1 {
+      display: block;
+      font-family: "Times New Roman", Times, serif;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 4px;
+    } */
+    p {
+      text-align: center;
+      margin-top: 0;
+      color: white;
     }
-    .project1{
-        background-color: blueviolet;
+    /* .project1 {
+      background-color: blueviolet;
     }
-    .project1>h2{
-        color: white;
-    }
-    video{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80vw;
-        height: auto;
+    .project1 > h2 {
+      color: white;
+    } */
+    video {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80vw;
+      height: auto;
     }
   </style>
   <body>
-    <h1>Juan Sierra</h1>
-    <p>Fullstack Developer</p>
-    <div class="project1">
-        <h2>Bucket Buddy</h2>
-        <video src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/Screen%20Recording%202023-11-15%20at%2012.02.15%E2%80%AFPM.mov" controls></video>
-        <p>I dedicate this project to my lost buddy. It is a personal project created, which allows users to create bucket lists in the form of tables.</p>
-    </div>
+    <nav id="navbar-example2" class="navbar px-3 position-fixed" style="background-color: rgba(0, 0, 0, 0.722); width: 100%; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);  z-index: 1;">
+        <a class="navbar-brand" href="#" style="color: rgb(197, 179, 245);" id="imTyping"></a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">About Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example rounded-2" tabindex="0" style="padding-top: 60px; background-color: black;">
+        <h4 id="scrollspyHeading1" style="color: white; text-align: center;">Education</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit ullamcorper dignissim cras tincidunt lobortis. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Curabitur vitae nunc sed velit dignissim sodales ut eu. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Mattis rhoncus urna neque viverra justo nec ultrices. Justo donec enim diam vulputate ut. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Urna condimentum mattis pellentesque id nibh. Pellentesque adipiscing commodo elit at. Urna cursus eget nunc scelerisque viverra mauris in aliquam.
+
+          Mi bibendum neque egestas congue quisque egestas diam in. Et odio pellentesque diam volutpat commodo sed egestas. Tortor pretium viverra suspendisse potenti. Egestas sed sed risus pretium. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Euismod elementum nisi quis eleifend. Ornare lectus sit amet est. Dignissim cras tincidunt lobortis feugiat vivamus. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Eu volutpat odio facilisis mauris sit. Justo donec enim diam vulputate ut pharetra sit. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. In egestas erat imperdiet sed euismod nisi porta. Ut placerat orci nulla pellentesque dignissim enim sit amet. Orci sagittis eu volutpat odio. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Magna fringilla urna porttitor rhoncus dolor purus non enim. Risus pretium quam vulputate dignissim suspendisse. Eget nulla facilisi etiam dignissim diam quis enim lobortis.</p>
+        <h4 id="scrollspyHeading2">About Me</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit ullamcorper dignissim cras tincidunt lobortis. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Curabitur vitae nunc sed velit dignissim sodales ut eu. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Mattis rhoncus urna neque viverra justo nec ultrices. Justo donec enim diam vulputate ut. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Urna condimentum mattis pellentesque id nibh. Pellentesque adipiscing commodo elit at. Urna cursus eget nunc scelerisque viverra mauris in aliquam.
+
+            Mi bibendum neque egestas congue quisque egestas diam in. Et odio pellentesque diam volutpat commodo sed egestas. Tortor pretium viverra suspendisse potenti. Egestas sed sed risus pretium. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Euismod elementum nisi quis eleifend. Ornare lectus sit amet est. Dignissim cras tincidunt lobortis feugiat vivamus. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Eu volutpat odio facilisis mauris sit. Justo donec enim diam vulputate ut pharetra sit. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. In egestas erat imperdiet sed euismod nisi porta. Ut placerat orci nulla pellentesque dignissim enim sit amet. Orci sagittis eu volutpat odio. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Magna fringilla urna porttitor rhoncus dolor purus non enim. Risus pretium quam vulputate dignissim suspendisse. Eget nulla facilisi etiam dignissim diam quis enim lobortis.</p>
+        <h4 id="scrollspyHeading3">Third heading</h4>
+        <p>...</p>
+        <h4 id="scrollspyHeading4">Fourth heading</h4>
+        <p>...</p>
+        <h4 id="scrollspyHeading5">Fifth heading</h4>
+        <p>...</p>
+      </div>
+      <script src="./script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+
+    <!-- Add Bootstrap JS (optional, for certain components) -->
+
+    <div>
+        <video
+          src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/Screen%20Recording%202023-11-15%20at%2012.02.15%E2%80%AFPM.mov"
+          controls
+        ></video>
+        <p>
+          I dedicate this project to my lost buddy. It is a personal project
+          created, which allows users to create bucket lists in the form of
+          tables.
+        </p>
+      </div>
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Default striped example"
+        aria-valuenow="10"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="margin-bottom: 10px"
+      >
+        <div class="progress-bar progress-bar-striped" style="width: 8%">
+          TS
+        </div>
+      </div>
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Success striped example"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="margin-bottom: 10px"
+      >
+        <div
+          class="progress-bar progress-bar-striped bg-success"
+          style="width: 18.3%"
+        >
+          18.3% CSS
+        </div>
+      </div>
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Info striped example"
+        aria-valuenow="50"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="margin-bottom: 10px"
+      >
+        <div
+          class="progress-bar progress-bar-striped bg-info"
+          style="width: 50%"
+        >
+          React
+        </div>
+      </div>
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Warning striped example"
+        aria-valuenow="75"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="margin-bottom: 10px"
+      >
+        <div
+          class="progress-bar progress-bar-striped bg-danger"
+          style="width: 72%"
+        >
+          72% JavaScript
+        </div>
+        </div>
