@@ -37,3 +37,15 @@ const typing = async () => {
   constructString(string1);
 };
 typing();
+
+const observer = new IntersectionObserver((target) => {
+  target.forEach((t) => {
+    if (t.isIntersecting) {
+      t.target.classList.add("show");
+    } else {
+      t.target.classList.remove("show");
+    }
+  });
+}, null);
+const targets = document.querySelectorAll(".hidden");
+targets.forEach((t) => observer.observe(t));
