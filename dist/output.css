@@ -594,21 +594,20 @@ video {
   display: flex;
 }
 
-.tw-h-24 {
-  height: 6rem;
-}
-
 .tw-h-auto {
   height: auto;
 }
 
-.tw-h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .tw-h-full {
   height: 100%;
+}
+
+.tw-h-screen {
+  height: 100vh;
+}
+
+.tw-min-h-screen {
+  min-height: 100vh;
 }
 
 .tw-w-1\/2 {
@@ -707,8 +706,8 @@ video {
      object-fit: cover;
 }
 
-.tw-p-4 {
-  padding: 1rem;
+.tw-pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .tw-pt-10 {
@@ -733,16 +732,6 @@ video {
   line-height: 1;
 }
 
-.tw-text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.tw-text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
 .tw-font-extrabold {
   font-weight: 800;
 }
@@ -759,11 +748,6 @@ video {
 .tw-slashed-zero {
   --tw-slashed-zero: slashed-zero;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
-}
-
-.tw-text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .tw-text-blue-300 {
@@ -820,15 +804,15 @@ video {
   transition-duration: 150ms;
 }
 
-.tw-delay-2000 {
-  transition-delay: 2000ms;
+.tw-delay-500 {
+  transition-delay: 500ms;
 }
 
 .tw-duration-1000 {
   transition-duration: 1000ms;
 }
 
-.tw-duration-2000 {
+.tw-duration-2500 {
   transition-duration: 2000ms;
 }
 
@@ -836,16 +820,43 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-.tw-ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tw-ease-linear {
-  transition-timing-function: linear;
-}
-
 .tw-ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+@media (min-width: 640px) {
+  .sm\:tw-h-24 {
+    height: 6rem;
+  }
+
+  .sm\:tw-w-full {
+    width: 100%;
+  }
+
+  .sm\:tw-text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:tw-text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:tw-text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .sm\:tw-text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .sm\:tw-text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
