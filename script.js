@@ -1,7 +1,7 @@
 const typing = async () => {
   let docElement = document.getElementById("imTyping");
   const string1 = "Hello, World !";
-  const string2 = " i'm Juan Sierra";
+  const string2 = " i'm Juan Sierra :)";
 
   const constructString = (str) => {
     for (let i in str) {
