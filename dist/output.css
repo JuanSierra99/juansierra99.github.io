@@ -772,6 +772,11 @@ video {
   line-height: 1.5rem;
 }
 
+.tw-text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .tw-font-bold {
   font-weight: 700;
 }
@@ -917,6 +922,20 @@ video {
   .sm\:tw-text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:tw-text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:tw-text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .sm\:tw-text-inherit {
+    color: inherit;
   }
 }
 
