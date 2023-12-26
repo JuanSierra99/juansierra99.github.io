@@ -880,11 +880,6 @@ video {
     width: 100%;
   }
 
-  .sm\:tw-text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .sm\:tw-text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
