@@ -657,6 +657,14 @@ video {
   width: 100vw;
 }
 
+.tw-w-1\/4 {
+  width: 25%;
+}
+
+.tw-w-3\/4 {
+  width: 75%;
+}
+
 .tw-flex-1 {
   flex: 1 1 0%;
 }
