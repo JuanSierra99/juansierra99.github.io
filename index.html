@@ -21,16 +21,35 @@
   .clip-circle {
     clip-path: circle(39% at center)
   }
+
+  @font-face {
+    font-family: 'cool-font';
+    src: url(./Static/fonts/ChakraPetch-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: 'cool-bold-font';
+    src: url(./Static/fonts/ChakraPetch-Bold.ttf);
+  }
+
+  .cool-font{
+    font-family: 'cool-font';
+  }
+
+  .cool-bold-font{
+    font-family: "cool-bold-font";
+  }
+
 </style>
 
-<body class="tw-w-screen tw-text-base">
+<body class="tw-w-screen tw-text-base tw-p-2 tw-pt-0 tw-bg-black cool-font">
   <nav
     class="navbar position-fixed tw-w-full tw-backdrop-blur-3xl tw-bg-opacity-70 tw-bg-black tw-bg sm:tw-text-xs tw-flex"
     style="
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
         z-index: 100;">
-    <a class="navbar-brand tw-text-purple-400 tw-ml-1 sm:tw-text-sm" href="#" id="imTyping"></a>
+    <a class="navbar-brand tw-text-purple-400 sm:tw-text-sm" href="#" id="imTyping"></a>
     <ul class="nav nav-pills">
       <li class="nav-item dropdown">
         <a class="nav-link tw-text-white tw-font-extrabold" href="#scrollspyHeading1" role="button"
@@ -58,8 +77,8 @@
     </div>
     
     <h4 id="scrollspyHeading1"
-      class="tw-text-white tw-text-center tw-font-extrabold sm:tw-text-4xl tw-mt-2 tw-font-serif sm:tw-border-t-4 sm:tw-border-b-4 tw-border-white">
-      Projects
+      class="tw-text-white tw-text-center sm:tw-text-4xl tw-mt-2 cool-bold-font tw-font-extrabold">
+      PROJECTS
     </h4>
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
@@ -70,18 +89,18 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner ">
         <div class="carousel-item active">
           <div id="BucketBuddy">
             <div class="card tw-block tw-ml-auto tw-mr-auto tw-mt-5 tw-mb-5 sm:tw-w-3/4 sm:tw-text-2xl">
               <img src="/Static/bucket-buddy-login.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
+              <div class="card-body tw-bg-gray-800 tw-text-white">
                 <h5 class="card-title tw-font-bold">Bucket Buddy</h5>
                 <p class="card-text">A web app that allows users to organize their life by giving them a simple way to
                   create lists that can help them keep track of tasks they would like to complete. Bucket Buddy is
                   designed to help individuals who struggle with managing their goals.</p>
                 <a href="https://github.com/JuanSierra99/BucketBuddy"
-                  class="btn btn-primary tw-font-bold tw-bg-black">Project Repository</a>
+                  class="tw-block tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-w-1/2 tw-p-1 tw-rounded-2xl tw-mt-1 tw-ml-auto tw-mr-auto"><img src="./Static/github.svg" class="sm:tw-h-8 tw-ml-auto tw-mr-auto"></a>
               </div>
             </div>
           </div>
@@ -90,14 +109,14 @@
           <div id="decibel-warrior">
             <div class="card tw-block tw-ml-auto tw-mr-auto tw-mt-5 tw-mb-5 sm:tw-w-3/4 sm:tw-text-2xl">
               <img src="/Static/decibel-warrior.png" class="card-img-top" alt="...">
-              <div class="card-body">
+              <div class="card-body tw-bg-gray-800 tw-text-white">
                 <h5 class="card-title tw-font-bold">Decibel Warrior</h5>
                 <p class="card-text">Introducing "Decible Warrior" - the thrilling mobile app that keeps you on your
                   toes! Keep your finger within the moving radius, or face the hilarious consequence of an audio clip
                   featuring a man's uproarious yelling. Stay sharp, stay entertained, and stay on the screen with
                   "Decible Warrior"!</p>
-                <a href="https://github.com/JuanSierra99/decibel_warrior"
-                  class="btn btn-primary tw-font-bold tw-bg-black">Project Repository</a>
+                  <a href="https://github.com/JuanSierra99/decibel_warrior"
+                  class="tw-block tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-w-1/2 tw-p-1 tw-rounded-2xl tw-mt-1 tw-ml-auto tw-mr-auto"><img src="./Static/github.svg" class="sm:tw-h-8 tw-ml-auto tw-mr-auto"></a>
               </div>
             </div>
           </div>
@@ -106,12 +125,12 @@
           <div id="film-website">
             <div class="card tw-block tw-ml-auto tw-mr-auto tw-mt-5 tw-mb-5 sm:tw-w-3/4 sm:tw-text-2xl">
               <img src="/Static/film-website.png" class="card-img-top" alt="...">
-              <div class="card-body">
+              <div class="card-body tw-bg-gray-800 tw-text-white">
                 <h5 class="card-title tw-font-bold">Film Website</h5>
                 <p class="card-text">A web application that maintain a collection of my favorite film photos. The backend api is built with python and uses machine learning for object recognition, Numpy for image masking, and openai api for image replacement using artifical intelligence.
                 </p>
                 <a href="https://github.com/JuanSierra99/Film-Site"
-                  class="btn btn-primary tw-font-bold tw-bg-black">Project Repository</a>
+                class="tw-block tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-w-1/2 tw-p-1 tw-rounded-2xl tw-mt-1 tw-ml-auto tw-mr-auto"><img src="./Static/github.svg" class="sm:tw-h-8 tw-ml-auto tw-mr-auto"></a>
               </div>
             </div>
           </div>
@@ -131,13 +150,13 @@
 
     <div id="education-container" class="tw-pt-4 tw-flex tw-flex-col">
       <h4 id="scrollspyHeading4"
-        class="sm:tw-text-4xl tw-text-center tw-text-blue-300 tw-font-extrabold sm:tw-border-t-4 sm:tw-border-b-4 tw-border-white tw-font-serif">
-        Education
+        class="sm:tw-text-4xl tw-text-center tw-text-blue-300 cool-bold-font tw-font-extrabold ">
+        EDUCATION
       </h4>
-      <h id="im-a-titan" class="tw-text-blue-600 sm:tw-text-3xl tw-font-extrabold tw-text-center tw-block tw-pt-3">A
+      <h id="im-a-titan" class="tw-text-blue-600 sm:tw-text-3xl tw-text-center tw-block tw-pt-3">A
         PROUD
       </h>
-      <h id="im-a-titan" class="sm:tw-text-8xl tw-font-extrabold tw-text-center tw-block tw-text-orange-500">TITAN!</h>
+      <h id="im-a-titan" class="sm:tw-text-8xl tw-text-center tw-font-extrabold tw-block tw-text-orange-500 cool-bold-font">TITAN!</h>
       <img src="https://raw.githubusercontent.com/JuanSierra99/juansierra99.github.io/main/Static/Titan.png"
         class="sm:tw-w-full tw-translate-y-1/2 hidden tw-transition-all tw-duration-2500 tw-relative tw-z-0" />
       <div class="tw-overflow-scroll tw-bg-gray-900 tw-flex-1 tw-z-10 tw-flex">
@@ -153,8 +172,8 @@
 
     <div class="tw-w-full tw-min-h-screen" id="about-me-section">
       <h4 id="scrollspyHeading5"
-        class="sm:tw-text-4xl tw-text-purple-400 tw-text-center tw-font-extrabold sm:tw-border-t-4 tw-border-b-4 tw-border-white tw-font-serif">
-        About Me
+        class="sm:tw-text-4xl tw-text-purple-400 tw-text-center cool-bold-font tw-font-extrabold">
+        ABOUT ME
       </h4>
       <div id="i-love-film" class="tw-flex tw-relative tw-flex-col tw-overflow-hidden">
         <div class="tw-relative tw-flex-grow">

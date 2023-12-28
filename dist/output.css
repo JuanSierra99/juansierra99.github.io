@@ -576,12 +576,20 @@ video {
   top: 50%;
 }
 
+.tw-right-0 {
+  right: 0px;
+}
+
 .tw-z-0 {
   z-index: 0;
 }
 
 .tw-z-10 {
   z-index: 10;
+}
+
+.tw-m-5 {
+  margin: 1.25rem;
 }
 
 .tw-mb-5 {
@@ -616,8 +624,20 @@ video {
   margin-top: auto;
 }
 
+.tw-mr-0 {
+  margin-right: 0px;
+}
+
+.tw-mt-1 {
+  margin-top: 0.25rem;
+}
+
 .tw-block {
   display: block;
+}
+
+.tw-inline {
+  display: inline;
 }
 
 .tw-flex {
@@ -655,6 +675,15 @@ video {
 
 .tw-w-screen {
   width: 100vw;
+}
+
+.tw-w-2 {
+  width: 0.5rem;
+}
+
+.tw-w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .tw-flex-1 {
@@ -734,6 +763,30 @@ video {
   overflow-y: hidden;
 }
 
+.tw-rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.tw-rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.tw-rounded-2xl {
+  border-radius: 1rem;
+}
+
+.tw-border {
+  border-width: 1px;
+}
+
+.tw-border-2 {
+  border-width: 2px;
+}
+
+.tw-border-4 {
+  border-width: 4px;
+}
+
 .tw-border-b-4 {
   border-bottom-width: 4px;
 }
@@ -752,6 +805,56 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.tw-border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.tw-border-green-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(187 247 208 / var(--tw-border-opacity));
+}
+
+.tw-border-purple-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(216 180 254 / var(--tw-border-opacity));
+}
+
+.tw-border-purple-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 232 255 / var(--tw-border-opacity));
+}
+
+.tw-border-purple-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(88 28 135 / var(--tw-border-opacity));
+}
+
+.tw-border-gray-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(31 41 55 / var(--tw-border-opacity));
+}
+
+.tw-border-gray-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(17 24 39 / var(--tw-border-opacity));
+}
+
+.tw-border-gray-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+.tw-border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
+.tw-border-gray-950 {
+  --tw-border-opacity: 1;
+  border-color: rgb(3 7 18 / var(--tw-border-opacity));
+}
+
 .tw-bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -762,19 +865,29 @@ video {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-.tw-bg-red-400 {
+.tw-bg-gray-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
-.tw-bg-red-600 {
+.tw-bg-gray-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
-.tw-bg-red-500 {
+.tw-bg-gray-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.tw-bg-green-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
+}
+
+.tw-bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .tw-bg-red-300 {
@@ -782,17 +895,35 @@ video {
   background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
-.tw-bg-opacity-70 {
-  --tw-bg-opacity: 0.7;
+.tw-bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
-.tw-to-white {
-  --tw-gradient-to: #fff var(--tw-gradient-to-position);
+.tw-bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.tw-bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
 }
 
 .tw-object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.tw-p-5 {
+  padding: 1.25rem;
+}
+
+.tw-p-1 {
+  padding: 0.25rem;
+}
+
+.tw-p-2 {
+  padding: 0.5rem;
 }
 
 .tw-pt-3 {
@@ -801,6 +932,10 @@ video {
 
 .tw-pt-4 {
   padding-top: 1rem;
+}
+
+.tw-pt-0 {
+  padding-top: 0px;
 }
 
 .tw-text-center {
@@ -867,6 +1002,11 @@ video {
 .tw-text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.tw-text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
 .tw-ring-inset {
