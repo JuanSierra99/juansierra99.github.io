@@ -975,6 +975,14 @@ video {
   transition-delay: 1000ms;
 }
 
+.tw-delay-500 {
+  transition-delay: 500ms;
+}
+
+.tw-delay-2500 {
+  transition-delay: 2000ms;
+}
+
 .tw-duration-1000 {
   transition-duration: 1000ms;
 }
