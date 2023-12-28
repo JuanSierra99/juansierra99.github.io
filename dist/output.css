@@ -576,10 +576,6 @@ video {
   top: 50%;
 }
 
-.tw-bottom-4 {
-  bottom: 1rem;
-}
-
 .tw-z-0 {
   z-index: 0;
 }
@@ -649,10 +645,6 @@ video {
   width: 50%;
 }
 
-.tw-w-3\/4 {
-  width: 75%;
-}
-
 .tw-w-auto {
   width: auto;
 }
@@ -663,11 +655,6 @@ video {
 
 .tw-w-screen {
   width: 100vw;
-}
-
-.tw-w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .tw-flex-1 {
@@ -747,48 +734,12 @@ video {
   overflow-y: hidden;
 }
 
-.tw-rounded-sm {
-  border-radius: 0.125rem;
-}
-
-.tw-rounded-md {
-  border-radius: 0.375rem;
-}
-
-.tw-border-2 {
-  border-width: 2px;
-}
-
-.tw-border-4 {
-  border-width: 4px;
-}
-
-.tw-border-r-4 {
-  border-right-width: 4px;
-}
-
-.tw-border-r-8 {
-  border-right-width: 8px;
-}
-
 .tw-border-b-4 {
   border-bottom-width: 4px;
 }
 
-.tw-border-t-4 {
-  border-top-width: 4px;
-}
-
-.tw-border-solid {
-  border-style: solid;
-}
-
 .tw-border-dashed {
   border-style: dashed;
-}
-
-.tw-border-none {
-  border-style: none;
 }
 
 .tw-border-black {
@@ -801,11 +752,6 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.tw-border-green-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(134 239 172 / var(--tw-border-opacity));
-}
-
 .tw-bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -816,38 +762,32 @@ video {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-.tw-bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.tw-bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .tw-bg-red-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
-.tw-bg-purple-400 {
+.tw-bg-red-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
-.tw-bg-purple-700 {
+.tw-bg-red-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(126 34 206 / var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
-.tw-bg-purple-600 {
+.tw-bg-red-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .tw-bg-opacity-70 {
   --tw-bg-opacity: 0.7;
+}
+
+.tw-to-white {
+  --tw-gradient-to: #fff var(--tw-gradient-to-position);
 }
 
 .tw-object-cover {
@@ -863,24 +803,12 @@ video {
   padding-top: 1rem;
 }
 
-.tw-pt-10 {
-  padding-top: 2.5rem;
-}
-
-.tw-pt-14 {
-  padding-top: 3.5rem;
-}
-
 .tw-text-center {
   text-align: center;
 }
 
 .tw-font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.tw-font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .tw-text-2xl {
@@ -893,22 +821,12 @@ video {
   line-height: 1.5rem;
 }
 
-.tw-text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.tw-text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.tw-font-bold {
+  font-weight: 700;
 }
 
 .tw-font-extrabold {
   font-weight: 800;
-}
-
-.tw-font-bold {
-  font-weight: 700;
 }
 
 .tw-ordinal {
@@ -929,10 +847,6 @@ video {
 .tw-text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
-.tw-text-inherit {
-  color: inherit;
 }
 
 .tw-text-orange-500 {
@@ -969,14 +883,6 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.tw-delay-1000 {
-  transition-delay: 1000ms;
-}
-
-.tw-delay-500 {
-  transition-delay: 500ms;
 }
 
 .tw-delay-2500 {
@@ -1016,28 +922,25 @@ video {
     height: 100%;
   }
 
-  .sm\:tw-w-full {
-    width: 100%;
-  }
-
   .sm\:tw-w-3\/4 {
     width: 75%;
   }
 
-  .sm\:tw-border-t-4 {
-    border-top-width: 4px;
+  .sm\:tw-w-full {
+    width: 100%;
   }
 
   .sm\:tw-border-b-4 {
     border-bottom-width: 4px;
   }
 
-  .sm\:tw-border-b-2 {
-    border-bottom-width: 2px;
+  .sm\:tw-border-t-4 {
+    border-top-width: 4px;
   }
 
-  .sm\:tw-border-t-2 {
-    border-top-width: 2px;
+  .sm\:tw-text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:tw-text-3xl {
@@ -1063,11 +966,6 @@ video {
   .sm\:tw-text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  .sm\:tw-text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
