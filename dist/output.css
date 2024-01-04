@@ -576,6 +576,10 @@ video {
   top: 50%;
 }
 
+.tw-top-0 {
+  top: 0px;
+}
+
 .tw-z-0 {
   z-index: 0;
 }
@@ -641,12 +645,24 @@ video {
   height: 100%;
 }
 
-.tw-h-auto {
-  height: auto;
+.tw-h-screen {
+  height: 100vh;
+}
+
+.tw-h-dvh {
+  height: 100dvh;
 }
 
 .tw-min-h-screen {
   min-height: 100vh;
+}
+
+.tw-min-h-svh {
+  min-height: 100svh;
+}
+
+.tw-min-h-dvh {
+  min-height: 100dvh;
 }
 
 .tw-w-1\/2 {
@@ -779,6 +795,11 @@ video {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
+.tw-bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
 .tw-bg-opacity-70 {
   --tw-bg-opacity: 0.7;
 }
@@ -810,6 +831,10 @@ video {
 
 .tw-text-center {
   text-align: center;
+}
+
+.tw-align-middle {
+  vertical-align: middle;
 }
 
 .tw-text-2xl {
@@ -853,11 +878,6 @@ video {
 .tw-text-orange-600 {
   --tw-text-opacity: 1;
   color: rgb(234 88 12 / var(--tw-text-opacity));
-}
-
-.tw-text-red-400 {
-  --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
 .tw-text-white {
@@ -954,6 +974,88 @@ video {
   .sm\:tw-text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:tw-text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .sm\:tw-text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:tw-h-10 {
+    height: 2.5rem;
+  }
+
+  .md\:tw-text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:tw-text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:tw-text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:tw-h-10 {
+    height: 2.5rem;
+  }
+
+  .lg\:tw-text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:tw-text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:tw-text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:tw-text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:tw-text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:tw-text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:tw-text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:tw-text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:tw-text-9xl {
+    font-size: 8rem;
+    line-height: 1;
   }
 }
 
