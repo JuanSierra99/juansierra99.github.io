@@ -63,10 +63,10 @@ const process_image = new IntersectionObserver(
       } else {
         image.target.classList.add("inverted");
       }
-      console.log(image);
+      // console.log(image);
     });
   },
-  { rootMargin }
+  { rootMargin: "0px 0px -90% 0px" }
 );
 
 inverted = document.querySelectorAll(".inverted");
