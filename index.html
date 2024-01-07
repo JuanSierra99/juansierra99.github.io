@@ -39,10 +39,19 @@
   .cool-bold-font {
     font-family: "cool-bold-font";
   }
+
+  .orig{
+    filter: none;
+  }
+
+  .inverted{
+    filter: invert(1);
+  }
 </style>
 
 <body class="tw-w-screen tw-text-base tw-p-1 tw-pt-0 tw-bg-black cool-font">
-  <nav class="navbar tw-z-50 tw-ml-auto tw-mr-auto tw-sticky tw-top-0 tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2 tw-w-11/12 tw-backdrop-blur-3xl tw-bg-opacity-70 tw-bg-gray-900 sm:tw-text-base lg:tw-text-xl"
+  <nav
+    class="navbar tw-z-50 tw-ml-auto tw-mr-auto tw-sticky tw-top-0 tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2 tw-w-11/12 tw-backdrop-blur-3xl tw-bg-opacity-70 tw-bg-gray-900 sm:tw-text-base lg:tw-text-xl"
     style="
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
@@ -53,7 +62,7 @@
         <a class="nav-link tw-text-white tw-font-extrabold" href="#scrollspyHeading1">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link tw-text-white tw-font-extrabold"  href="#scrollspyHeading2">Education</a>
+        <a class="nav-link tw-text-white tw-font-extrabold" href="#scrollspyHeading2">Education</a>
       </li>
       <li class="nav-item">
         <a class="nav-link tw-text-white tw-font-extrabold" href="#scrollspyHeading3">Me!</a>
@@ -62,37 +71,43 @@
   </nav>
 
   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
-    data-bs-smooth-scroll="true" class="scrollspy-example rounded-2" tabindex="0"
-    style="padding-top: 100px; background-color: black">
-    <div class="tw-flex  tw-justify-evenly">
-      <div class="">
-      <a href="https://www.linkedin.com/in/juan-sierra-971837120" class=""><img src="./Static/linkedin.svg"
-          class="sm:tw-h-8 lg:tw-h-10"></a>
+    data-bs-smooth-scroll="true" class="scrollspy-example rounded-2" tabindex="0" style="background-color: black">
+    <div class="tw-mt-2 tw-mb-2">
+      <p class="tw-text-white tw-text-center">CONTACT ME:</p>
+      <div class="tw-flex tw-justify-evenly">
+        <div class="">
+          <a href="https://www.linkedin.com/in/juan-sierra-971837120" class=""><img src="./Static/linkedin.svg"
+              class="sm:tw-h-8 lg:tw-h-10"></a>
+        </div>
+
+        <a href="./Static/Fullstack-Resume.pdf" download="Juan-Sierra-Resume.pdf" class=""><img
+            src="./Static/file-solid.svg" class="sm:tw-h-8 lg:tw-h-10"></a>
+        <a href="https://github.com/JuanSierra99" class=""><img src="./Static/github.svg"
+            class="sm:tw-h-8 lg:tw-h-10"></a>
       </div>
-      
-      <a href="./Static/Fullstack-Resume.pdf" download="Juan-Sierra-Resume.pdf" class=""><img
-          src="./Static/file-solid.svg" class="sm:tw-h-8 lg:tw-h-10"></a>
-      <a href="https://github.com/JuanSierra99" class=""><img src="./Static/github.svg" class="sm:tw-h-8 lg:tw-h-10"></a>
     </div>
 
     <h4 id="scrollspyHeading1"
-      class="tw-text-white tw-text-center sm:tw-text-4xl lg:tw-text-6xl tw-mt-2 cool-bold-font tw-font-extrabold">
+      class="tw-text-white tw-text-center sm:tw-text-4xl lg:tw-text-6xl tw-mb-2 cool-bold-font tw-font-extrabold">
       PROJECTS
     </h4>
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div id="BucketBuddy">
-            <div class="card tw-ml-auto tw-mr-auto sm:tw-text-2xl lg:tw-text-4xl tw-w-3/4">
+            <div class="card tw-ml-auto tw-mr-auto sm:tw-text-2xl lg:tw-text-4xl tw-w-3/4 ">
               <img src="/Static/bucket-buddy-home.jpeg" class="card-img-top" alt="...">
-              <div class="card-body tw-bg-gray-800 tw-text-white">
+              <div class="card-body tw-bg-gray-800 tw-text-white md:tw-hidden">
                 <h5 class="card-title tw-font-bold">Bucket Buddy</h5>
-                <p class="card-text tw-line-clamp-6 tw-overflow-scroll">A web app that allows users to organize their life by giving them a simple way to
+                <p class="card-text tw-line-clamp-6 tw-overflow-scroll">A web app that allows users to organize their
+                  life by giving them a simple way to
                   create lists that can help them keep track of tasks they would like to complete. Bucket Buddy is
                   designed to help individuals who struggle with managing their goals.</p>
                 <a href="https://github.com/JuanSierra99/BucketBuddy"
                   class="tw-block tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-w-1/2 tw-p-1 tw-rounded-2xl tw-ml-auto tw-mr-auto"><img
                     src="./Static/github.svg" class="sm:tw-h-8 tw-ml-auto tw-mr-auto"></a>
+              </div>
+              <div class="tw-hidden md:tw-block">
               </div>
             </div>
           </div>
@@ -120,9 +135,11 @@
               <img src="/Static/film-website.png" class="card-img-top" alt="...">
               <div class="card-body tw-bg-gray-800 tw-text-white">
                 <h5 class="card-title tw-font-bold">Film Website</h5>
-                <p class="card-text tw-line-clamp-6 tw-overflow-scroll">A web application that maintain a collection of your favorite film photos. The
+                <p class="card-text tw-line-clamp-6 tw-overflow-scroll">A web application that maintain a collection of
+                  your favorite film photos. The
                   backend api is built with python and uses machine learning for object recognition, Numpy for image
-                  masking, and openai api for image replacement using artifical intelligence. Simple to use, and pleasent to view. 
+                  masking, and openai api for image replacement using artifical intelligence. Simple to use, and
+                  pleasent to view.
                 </p>
                 <a href="https://github.com/JuanSierra99/Film-Site"
                   class="tw-block tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-w-1/2 tw-p-1 tw-rounded-2xl tw-mt-1 tw-ml-auto tw-mr-auto"><img
@@ -154,10 +171,10 @@
 
     <div id="education-container" class="tw-pt-4 tw-flex tw-flex-col">
       <h4 id="scrollspyHeading2"
-        class="sm:tw-text-4xl lg:tw-text-6xl tw-text-center tw-text-white cool-bold-font tw-font-extrabold ">
+        class="sm:tw-text-4xl lg:tw-text-6xl tw-text-center tw-text-white cool-bold-font tw-font-extrabold tw-mb-2">
         EDUCATION
       </h4>
-      <h id="im-a-titan" class="tw-text-blue-600 sm:tw-text-3xl tw-text-center tw-block tw-pt-3">A
+      <h id="im-a-titan" class="tw-text-blue-600 sm:tw-text-3xl tw-text-center tw-block">A
         PROUD
       </h>
       <h id="im-a-titan"
@@ -180,32 +197,35 @@
         class="sm:tw-text-4xl lg:tw-text-6xl tw-text-white tw-text-center cool-bold-font tw-font-extrabold">
         ABOUT ME
       </h4>
-      <div id="i-love-film" class="tw-flex tw-relative tw-flex-col tw-overflow-hidden">
-        <div class="tw-relative tw-flex-grow">
+      <div id="i-love-film" class="tw-flex tw-relative tw-flex-col">
+  
+          <img src="/Static/Filmstrip.png" class="tw-z-50 tw-w-full tw-h-auto tw-sticky tw-top-0"/>
+  
+        <div class="tw-relative tw-flex-grow tw-overflow-hidden">
           <p
             class="sm:tw-text-6xl lg:tw-text-8xl tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-text-white tw-z-10 tw-absolute tw-font-extrabold cool-bold-font">
             I</p>
           <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/flowers2 Large.jpeg"
-            class="hidden tw-h-full tw-overflow-clip tw-w-full tw-object-cover tw-translate-x-1/2 tw-transition-all tw-duration-2500 tw-ease-out tw-delay-2500"
-            alt="Image" />
+            class="inverted tw-h-full tw-overflow-clip tw-w-full tw-object-cover tw-transition-all tw-duration-700"
+            alt="Image"/>
         </div>
-        <div class="tw-relative tw-flex-grow">
+        <div class="tw-relative tw-flex-grow tw-overflow-hidden">
           <p
             class="sm:tw-text-6xl lg:tw-text-8xl tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-text-white tw-z-10 tw-absolute tw-font-extrabold cool-bold-font">
             LOVE</p>
           <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/whitebud Large.jpeg"
-            class="hidden tw-h-full tw-w-full tw-object-cover tw-translate-x-1/2 tw-transition-all tw-duration-2500 tw-ease-out tw-delay-2500"
+            class="inverted tw-h-full tw-w-full tw-object-cover tw-transition-all tw-duration-700"
             alt="Image" />
         </div>
-        <div class="tw-relative tw-flex-grow">
+        <div class="tw-relative tw-flex-grow tw-overflow-hidden">
           <p
             class="sm:tw-text-6xl lg:tw-text-8xl tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-text-white tw-z-10 tw-absolute tw-font-extrabold cool-bold-font">
             FILM</p>
           <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/glitch Large.jpeg"
-            class="hidden sm:tw-h-full tw-w-full tw-object-cover tw-translate-x-1/2 tw-transition-all tw-duration-2500 tw-ease-out tw-delay-2500"
+            class="inverted sm:tw-h-full tw-w-full tw-object-cover tw-transition-all tw-duration-700"
             alt="Image" />
         </div>
-        <div class="tw-flex" id="2">
+        <div class="tw-flex tw-overflow-hidden" id="2">
           <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static//oaxaca-building Large.jpeg"
             class="hidden tw-h-full tw-w-1/2 tw-object-cover tw-translate-y-1/2 tw-transition-all tw-duration-1000 tw-ease-in tw-delay-2000"
             alt="Image" />
@@ -217,21 +237,24 @@
       </div>
       <div class="tw-relative tw-overflow-scroll tw-overflow-y-hidden tw-flex">
         <h4 class="tw-text-orange-600 sm:tw-text-2xl lg:tw-text-4xl tw-mt-auto tw-mb-auto tw-font-extrabold">
-          This is Bubba. The BIGGEST part of me.
+          And I Just Have To mention My Bubba.
         </h4>
         <img src="/Static/looking-at-angels-square.jpeg"
           class="tw-w-auto tw-h-1/4 tw-transition-all tw-duration-1000 tw-ease-out tw-translate-y-1/2 hidden clip-circle"
           alt="Image" />
-          <img src="Static/fav-bubba-photo-square.jpeg"
+        <img src="Static/fav-bubba-photo-square.jpeg"
           class="tw-w-auto tw-h-1/4 tw-transition-all tw-duration-1000 tw-ease-out tw-translate-y-1/2 hidden clip-circle"
           alt="Image" />
-          <img src="/Static/firebubba-square.jpeg"
+        <img src="/Static/firebubba-square.jpeg"
           class="tw-w-auto tw-h-1/4 tw-transition-all tw-duration-1000 tw-ease-out tw-translate-y-1/2 hidden clip-circle"
           alt="Image" />
         <!-- <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/poker-face Large.jpeg"
           class="tw-w-auto tw-h-1/4 tw-transition-all tw-duration-1000 tw-ease-out tw-translate-y-1/2 hidden clip-circle"
           alt="Image" /> -->
       </div>
+      <p class="tw-text-white sm:tw-text-2xl lg:tw-text-4xl tw-font-extrabold tw-text-center">
+        Designed And Created By Juan Sierra
+      </p>
     </div>
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

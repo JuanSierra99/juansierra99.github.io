@@ -48,5 +48,33 @@ const observer = new IntersectionObserver((target) => {
     // }
   });
 }, null);
+
+const viewportHeight = Math.max(
+  document.documentElement.clientHeight || 0,
+  window.innerHeight || 0
+);
+const rootMargin = `0px 0px -${viewportHeight / 2}px 0px`;
+
+const process_image = new IntersectionObserver(
+  (inverted_images) => {
+    inverted_images.forEach((image) => {
+      if (image.isIntersecting) {
+        image.target.classList.remove("inverted");
+      } else {
+        image.target.classList.add("inverted");
+      }
+      console.log(image);
+    });
+  },
+  { rootMargin }
+);
+
+inverted = document.querySelectorAll(".inverted");
+inverted.forEach((img) => {
+  console.log("here");
+  process_image.observe(img);
+});
+// process_image.observe(inverted);
+
 const targets = document.querySelectorAll(".hidden");
 targets.forEach((t) => observer.observe(t));
