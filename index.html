@@ -41,8 +41,14 @@
   }
 
   .inverted{
-  
+    
   }
+
+  .film-backdrop-filter{
+    -webkit-backdrop-filter: hue-rotate(180deg);
+    backdrop-filter: hue-rotate(180deg);
+  }
+  
 </style>
 
 <body class="tw-w-screen tw-text-base tw-p-1 tw-pt-0 tw-bg-black cool-font">
@@ -196,8 +202,8 @@
             ABOUT ME
           </h4>
           <img id="film-border" src="/Static/Filmstrip.png"
-            class="tw-z-50 tw-w-full tw-h-auto  tw-backdrop-hue-rotate-180"
-            style="-webkit-backdrop-filter: hue-rotate(180deg);" />
+            class="tw-z-50 tw-w-full tw-h-auto film-backdrop-filter"
+           />
         </div>
         <!-- <img id="film-border" src="/Static/Filmstrip.png" class="tw-z-50 tw-w-full tw-h-auto tw-sticky tw-top-0 tw-backdrop-hue-rotate-180"/> -->
         <div class="tw-relative tw-flex-grow tw-overflow-hidden">
