@@ -49,32 +49,39 @@ const observer = new IntersectionObserver((target) => {
   });
 }, null);
 
-const viewportHeight = Math.max(
-  document.documentElement.clientHeight || 0,
-  window.innerHeight || 0
-);
-const rootMargin = `0px 0px -${viewportHeight / 2}px 0px`;
-
+const header_text = document.getElementById("scrollspyHeading3");
 const process_image = new IntersectionObserver(
   (inverted_images) => {
+    console.log(inverted_images);
     inverted_images.forEach((image) => {
+      const imageId = image.target.id;
       if (image.isIntersecting) {
-        image.target.classList.remove("inverted");
-      } else {
-        image.target.classList.add("inverted");
+        switch (imageId) {
+          case "image1":
+            header_text.textContent = "I LOVE TAKING FILM PHOTOS :)";
+            break;
+          case "image2":
+            header_text.textContent =
+              "MY HOBBIES INCLUDE GAMING, READING, AND WORKING OUT";
+            break;
+          case "image3":
+            header_text.textContent =
+              "ALSO I COLLECT AUDIO EQUIPMENT, MANGA, AND BOARD/CARD GAMES";
+            break;
+          case "last-film-images":
+            header_text.textContent = "OH AND I LOVE TRAVELING !";
+            break;
+        }
       }
-      // console.log(image);
     });
   },
-  { rootMargin: "0px 0px -90% 0px" }
+  { rootMargin: "0px 0px -80% 0px", threshold: 0.2 }
 );
 
 inverted = document.querySelectorAll(".inverted");
 inverted.forEach((img) => {
-  console.log("here");
   process_image.observe(img);
 });
-// process_image.observe(inverted);
 
 const targets = document.querySelectorAll(".hidden");
 targets.forEach((t) => observer.observe(t));

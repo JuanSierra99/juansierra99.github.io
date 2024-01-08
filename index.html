@@ -40,18 +40,14 @@
     font-family: "cool-bold-font";
   }
 
-  .orig{
-    filter: none;
-  }
-
   .inverted{
-    filter: invert(1);
+  
   }
 </style>
 
 <body class="tw-w-screen tw-text-base tw-p-1 tw-pt-0 tw-bg-black cool-font">
   <nav
-    class="navbar tw-z-50 tw-ml-auto tw-mr-auto tw-sticky tw-top-0 tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2 tw-w-11/12 tw-backdrop-blur-3xl tw-bg-opacity-70 tw-bg-gray-900 sm:tw-text-base lg:tw-text-xl"
+    class="navbar tw-z-30 tw-ml-auto tw-mr-auto tw-sticky tw-top-0 tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2 tw-w-11/12 tw-backdrop-blur-3xl tw-bg-opacity-70 tw-bg-gray-900 sm:tw-text-base lg:tw-text-xl"
     style="
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
@@ -97,7 +93,7 @@
           <div id="BucketBuddy">
             <div class="card tw-ml-auto tw-mr-auto sm:tw-text-2xl lg:tw-text-4xl tw-w-3/4 ">
               <img src="/Static/bucket-buddy-home.jpeg" class="card-img-top" alt="...">
-              <div class="card-body tw-bg-gray-800 tw-text-white md:tw-hidden">
+              <div class="card-body tw-bg-gray-800 tw-text-white lg:tw-hidden">
                 <h5 class="card-title tw-font-bold">Bucket Buddy</h5>
                 <p class="card-text tw-line-clamp-6 tw-overflow-scroll">A web app that allows users to organize their
                   life by giving them a simple way to
@@ -193,50 +189,55 @@
     </div>
 
     <div class="tw-w-full tw-min-h-screen" id="about-me-section">
-      <h4 id="scrollspyHeading3"
-        class="sm:tw-text-4xl lg:tw-text-6xl tw-text-white tw-text-center cool-bold-font tw-font-extrabold">
-        ABOUT ME
-      </h4>
       <div id="i-love-film" class="tw-flex tw-relative tw-flex-col">
-  
-          <img src="/Static/Filmstrip.png" class="tw-z-50 tw-w-full tw-h-auto tw-sticky tw-top-0"/>
-  
+        <div class="tw-sticky tw-top-0 tw-z-50">
+          <h4 id="scrollspyHeading3"
+            class="sm:tw-text-2xl lg:tw-text-4xl tw-text-white tw-text-center cool-bold-font tw-font-extrabold tw-absolute tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2">
+            ABOUT ME
+          </h4>
+          <img id="film-border" src="/Static/Filmstrip.png"
+            class="tw-z-50 tw-w-full tw-h-auto  tw-backdrop-hue-rotate-180" />
+        </div>
+        <!-- <img id="film-border" src="/Static/Filmstrip.png" class="tw-z-50 tw-w-full tw-h-auto tw-sticky tw-top-0 tw-backdrop-hue-rotate-180"/> -->
         <div class="tw-relative tw-flex-grow tw-overflow-hidden">
-          <p
+          <!-- <p
             class="sm:tw-text-6xl lg:tw-text-8xl tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-text-white tw-z-10 tw-absolute tw-font-extrabold cool-bold-font">
-            I</p>
+            I</p> -->
           <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/flowers2 Large.jpeg"
-            class="inverted tw-h-full tw-overflow-clip tw-w-full tw-object-cover tw-transition-all tw-duration-700"
-            alt="Image"/>
+            id="image1"
+            class="tw-h-full tw-overflow-clip tw-w-full tw-object-cover tw-transition-all tw-duration-700 tw-hue-rotate-180 inverted"
+            alt="Image" />
         </div>
         <div class="tw-relative tw-flex-grow tw-overflow-hidden">
-          <p
+          <!-- <p
             class="sm:tw-text-6xl lg:tw-text-8xl tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-text-white tw-z-10 tw-absolute tw-font-extrabold cool-bold-font">
-            LOVE</p>
+            LOVE</p> -->
           <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/whitebud Large.jpeg"
-            class="inverted tw-h-full tw-w-full tw-object-cover tw-transition-all tw-duration-700"
+          id="image2"
+            class="tw-h-full tw-w-full tw-object-cover tw-transition-all tw-duration-700  tw-hue-rotate-180 inverted"
             alt="Image" />
         </div>
         <div class="tw-relative tw-flex-grow tw-overflow-hidden">
-          <p
+          <!-- <p
             class="sm:tw-text-6xl lg:tw-text-8xl tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-text-white tw-z-10 tw-absolute tw-font-extrabold cool-bold-font">
-            FILM</p>
+            FILM</p> -->
           <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/glitch Large.jpeg"
-            class="inverted sm:tw-h-full tw-w-full tw-object-cover tw-transition-all tw-duration-700"
+          id="image3"
+            class=" sm:tw-h-full tw-w-full tw-object-cover tw-transition-all tw-duration-700  tw-hue-rotate-180 inverted"
             alt="Image" />
         </div>
-        <div class="tw-flex tw-overflow-hidden" id="2">
+        <div class="tw-flex tw-overflow-hidden tw-pb-16 tw-z-40">
           <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static//oaxaca-building Large.jpeg"
-            class="hidden tw-h-full tw-w-1/2 tw-object-cover tw-translate-y-1/2 tw-transition-all tw-duration-1000 tw-ease-in tw-delay-2000"
-            alt="Image" />
-
+            class="hidden tw-h-full tw-w-1/2 tw-object-cover tw-translate-y-1/2 tw-transition-all tw-duration-1000 tw-ease-in tw-delay-2000  tw-hue-rotate-180 inverted"
+            alt="Image" 
+            id="last-film-images"/>
           <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/flowers Large.jpeg"
-            class="hidden tw-h-full tw-w-1/2 tw-object-cover tw-translate-y-1/3 tw-transition-all tw-duration-1000 tw-ease-in tw-delay-2000"
+            class="hidden tw-h-full tw-w-1/2 tw-object-cover tw-translate-y-1/3 tw-transition-all tw-duration-1000 tw-ease-in tw-delay-2000 tw-hue-rotate-180 inverted"
             alt="Image" />
         </div>
       </div>
       <div class="tw-relative tw-overflow-scroll tw-overflow-y-hidden tw-flex tw-bg-yellow-50">
-        <h4 class="tw-text-red-700 sm:tw-text-2xl lg:tw-text-4xl tw-mt-auto tw-mb-auto tw-font-extrabold">
+        <h4 class="tw-text-red-700 sm:tw-text-2xl lg:tw-text-4xl tw-mt-auto tw-mb-auto tw-font-extrabold tw-ml-2">
           BUBBALICOUS IS HIS NAME.
         </h4>
         <img src="/Static/looking-at-angels-square.jpeg"
@@ -252,7 +253,7 @@
           class="tw-w-auto tw-h-1/4 tw-transition-all tw-duration-1000 tw-ease-out tw-translate-y-1/2 hidden clip-circle"
           alt="Image" /> -->
       </div>
-      <p class="tw-text-white sm:tw-text-2xl lg:tw-text-4xl tw-font-extrabold tw-text-center">
+      <p class="tw-text-white sm:tw-text-2xl lg:tw-text-4xl tw-font-extrabold tw-text-center tw-h-screen">
         Designed And Created By Juan Sierra
       </p>
     </div>
