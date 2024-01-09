@@ -41,37 +41,13 @@
   }
 
   .inverted-film{
-    filter: hue-rotate(180deg);
-    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(120deg);
+    -webkit-filter: hue-rotate(120deg);
   }
 
   .film-backdrop-filter{
-    -webkit-backdrop-filter: hue-rotate(180deg);
-    backdrop-filter: hue-rotate(180deg);
-  }
-  
-  .bubba-section{
-    position: relative;
-  }
-
-  .bubba-section::-webkit-scrollbar{
-    /* background-image: url("Static/flower-field.jpg"); */
-    background-color: #faedcd; 
-    /* background-size: contain;
-    height: 100px; */
-  }
-
-  .bubba-section::-webkit-scrollbar-thumb{
-    background-color: #606c38;
-    /* background-image: url("Static/dog-solid.svg");
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center; */
-  }
-
-  .bubba-section::-webkit-scrollbar-thumb::after{
-    content: "Hi";
-    z-index: 100;
+    -webkit-backdrop-filter: hue-rotate(240deg);
+    backdrop-filter: hue-rotate(240deg);
   }
 </style>
 
@@ -267,7 +243,7 @@
             alt="Image" />
         </div>
       </div>
-      <div class="tw-overflow-scroll tw-overflow-y-hidden tw-flex tw-bg-yellow-50 bubba-section">
+      <div class="tw-relative tw-overflow-scroll tw-overflow-y-hidden tw-flex tw-bg-yellow-50">
         <h4 class="tw-text-red-600 sm:tw-text-2xl lg:tw-text-4xl tw-mt-auto tw-mb-auto tw-font-extrabold tw-ml-2">
           BUBBALICOUS IS HIS NAME.
         </h4>
@@ -284,7 +260,7 @@
           class="tw-w-auto tw-h-1/4 tw-transition-all tw-duration-1000 tw-ease-out tw-translate-y-1/2 hidden clip-circle"
           alt="Image" /> -->
       </div>
-      <p class="tw-text-white sm:tw-text-2xl lg:tw-text-4xl tw-font-extrabold tw-text-center tw-h-screen">
+      <p class="tw-text-white sm:tw-text-2xl lg:tw-text-4xl tw-font-extrabold tw-text-center tw-bottom-0">
         Designed And Created By Juan Sierra
       </p>
     </div>
