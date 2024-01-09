@@ -260,12 +260,25 @@
           class="tw-w-auto tw-h-1/4 tw-transition-all tw-duration-1000 tw-ease-out tw-translate-y-1/2 hidden clip-circle"
           alt="Image" /> -->
       </div>
-      <p class="tw-text-white sm:tw-text-2xl lg:tw-text-4xl tw-font-extrabold tw-text-center tw-bottom-0">
-        Designed And Created By Juan Sierra
-      </p>
+      <button class="tw-text-white sm:tw-text-4xl lg:tw-text-6xl tw-font-extrabold cool-bold-font tw-block tw-bg-red-500 tw-ml-auto tw-mr-auto tw-p-4 tw-w-full"
+      id="elevator">
+        PRESS ME!!!
+      </button>
     </div>
     <script src="./script.js"></script>
+    <script src="./Elevator.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+      // Simple elevator usage.
+      var elementButton = document.getElementById('elevator');
+      var elevator = new Elevator({
+          element: elementButton,
+          mainAudio: 'Static/sounds/elevator_music.mov', //Music by Bensound.com/royalty-free-music License code: 8VBZ8HZARZAOVHDQ
+          endAudio:  './Static/sounds/ding.mov'
+      });
+
+  </script>
 </body>
 
 </html>
