@@ -54,7 +54,6 @@ const process_image = new IntersectionObserver(
     inverted_images.forEach((image) => {
       const imageId = image.target.id;
       if (image.isIntersecting) {
-        process_image.unobserve(image.target);
         switch (imageId) {
           case "image1":
             header_text.textContent = "I LOVE TAKING FILM PHOTOS :)";
