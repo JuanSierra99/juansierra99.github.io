@@ -62,11 +62,11 @@ const process_image = new IntersectionObserver(
             break;
           case "image2":
             header_text.textContent =
-              "MY HOBBIES INCLUDE GAMING, READING, AND WORKING OUT";
+              "MY OTHER HOBBIES INCLUDE GAMING, READING, AND WORKING OUT";
             break;
           case "image3":
             header_text.textContent =
-              "ALSO I COLLECT AUDIO EQUIPMENT, MANGA, AND BOARD/CARD GAMES";
+              "I'M ALSO INTO COLLECTING AUDIO EQUIPMENT, MANGA, AND TABLETOP GAMES";
             break;
           case "last-film-images":
             header_text.textContent = "OH AND I LOVE TRAVELING !";
@@ -78,7 +78,7 @@ const process_image = new IntersectionObserver(
   { rootMargin: "0px 0px -80% 0px", threshold: 0.2 }
 );
 
-inverted = document.querySelectorAll(".inverted");
+inverted = document.querySelectorAll(".inverted-film");
 inverted.forEach((img) => {
   process_image.observe(img);
 });
