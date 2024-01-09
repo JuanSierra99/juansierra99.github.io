@@ -40,12 +40,22 @@
     font-family: "cool-bold-font";
   }
 
-  .inverted-film{
+  .inverted-film {
+    /* Hardware Acceleration */
+    -webkit-transform: translateZ(0); 
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+
     filter: hue-rotate(120deg);
     -webkit-filter: hue-rotate(120deg);
   }
 
-  .film-backdrop-filter{
+  .film-backdrop-filter {
+    /* Hardware Acceleration */
+    -webkit-transform: translateZ(0);
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+
     -webkit-backdrop-filter: hue-rotate(240deg);
     backdrop-filter: hue-rotate(240deg);
   }
@@ -98,7 +108,7 @@
         <div class="carousel-item active">
           <div id="BucketBuddy">
             <div class="card tw-ml-auto tw-mr-auto sm:tw-text-2xl lg:tw-text-4xl tw-w-3/4 ">
-              <img src="/Static/bucket-buddy-home.jpeg" class="card-img-top" alt="...">
+              <img src="/Static/bucket-buddy-home.webp" class="card-img-top" alt="...">
               <div class="card-body tw-bg-gray-800 tw-text-white lg:tw-hidden">
                 <h5 class="card-title tw-font-bold">Bucket Buddy</h5>
                 <p class="card-text tw-line-clamp-6 tw-overflow-scroll">A web app that allows users to organize their
@@ -117,7 +127,7 @@
         <div class="carousel-item">
           <div id="decibel-warrior">
             <div class="card tw-ml-auto tw-mr-auto tw-w-3/4 sm:tw-text-2xl lg:tw-text-4xl">
-              <img src="/Static/decibel-warrior.png" class="card-img-top" alt="...">
+              <img src="/Static/decibel-warrior.webp" class="card-img-top" alt="...">
               <div class="card-body tw-bg-gray-800 tw-text-white">
                 <h5 class="card-title tw-font-bold">Decibel Warrior</h5>
                 <p class="card-text tw-line-clamp-6 tw-overflow-scroll">The thrilling mobile app that keeps you on your
@@ -134,7 +144,7 @@
         <div class="carousel-item">
           <div id="film-website">
             <div class="card tw-block tw-ml-auto tw-mr-auto tw-w-3/4 sm:tw-text-2xl lg:tw-text-4xl">
-              <img src="/Static/film-website.png" class="card-img-top" alt="...">
+              <img src="/Static/film-website.webp" class="card-img-top" alt="...">
               <div class="card-body tw-bg-gray-800 tw-text-white">
                 <h5 class="card-title tw-font-bold">Film Website</h5>
                 <p class="card-text tw-line-clamp-6 tw-overflow-scroll">A web application that maintain a collection of
@@ -201,16 +211,14 @@
             class="sm:tw-text-2xl lg:tw-text-4xl tw-text-white tw-text-center cool-bold-font tw-font-extrabold tw-absolute tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2">
             ABOUT ME
           </h4>
-          <img id="film-border" src="/Static/Filmstrip.png"
-            class="tw-z-50 tw-w-full tw-h-auto film-backdrop-filter"
-           />
+          <img id="film-border" src="/Static/Filmstrip.png" class="tw-z-50 tw-w-full tw-h-auto film-backdrop-filter" />
         </div>
         <!-- <img id="film-border" src="/Static/Filmstrip.png" class="tw-z-50 tw-w-full tw-h-auto tw-sticky tw-top-0 tw-backdrop-hue-rotate-180"/> -->
         <div class="tw-relative tw-flex-grow tw-overflow-hidden">
           <!-- <p
             class="sm:tw-text-6xl lg:tw-text-8xl tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-text-white tw-z-10 tw-absolute tw-font-extrabold cool-bold-font">
             I</p> -->
-          <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/flowers2 Large.jpeg"
+          <img src="./Static/flowers2 Large.webp"
             id="image1"
             class="tw-h-full tw-overflow-clip tw-w-full tw-object-cover tw-transition-all tw-duration-700 inverted-film"
             alt="Image" />
@@ -219,51 +227,50 @@
           <!-- <p
             class="sm:tw-text-6xl lg:tw-text-8xl tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-text-white tw-z-10 tw-absolute tw-font-extrabold cool-bold-font">
             LOVE</p> -->
-          <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/whitebud Large.jpeg"
-          id="image2"
-            class="tw-h-full tw-w-full tw-object-cover tw-transition-all tw-duration-700  inverted-film"
+          <img src="./Static/whitebud Large.webp"
+            id="image2" class="tw-h-full tw-w-full tw-object-cover tw-transition-all tw-duration-700  inverted-film"
             alt="Image" />
         </div>
         <div class="tw-relative tw-flex-grow tw-overflow-hidden">
           <!-- <p
             class="sm:tw-text-6xl lg:tw-text-8xl tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-text-white tw-z-10 tw-absolute tw-font-extrabold cool-bold-font">
             FILM</p> -->
-          <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/glitch Large.jpeg"
-          id="image3"
-            class=" sm:tw-h-full tw-w-full tw-object-cover tw-transition-all tw-duration-700  inverted-film"
+          <img src="./Static/glitch Large.webp"
+            id="image3" class=" sm:tw-h-full tw-w-full tw-object-cover tw-transition-all tw-duration-700  inverted-film"
             alt="Image" />
         </div>
         <div class="tw-flex tw-overflow-hidden tw-pb-16 tw-z-40">
-          <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static//oaxaca-building Large.jpeg"
-            class="tw-h-full tw-w-1/2 tw-object-cover inverted-film"
-            alt="Image" 
-            id="last-film-images"/>
-          <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/flowers Large.jpeg"
-            class="tw-h-full tw-w-1/2 tw-object-cover inverted-film"
-            alt="Image" />
+          <img src="./Static//oaxaca-building Large.webp"
+            class="tw-h-full tw-w-1/2 tw-object-cover inverted-film" alt="Image" id="last-film-images" />
+          <img src="./Static/flowers Large.webp"
+            class="tw-h-full tw-w-1/2 tw-object-cover inverted-film" alt="Image" />
         </div>
       </div>
       <div class="tw-relative tw-overflow-scroll tw-overflow-y-hidden tw-flex tw-bg-yellow-50">
         <h4 class="tw-text-red-600 sm:tw-text-2xl lg:tw-text-4xl tw-mt-auto tw-mb-auto tw-font-extrabold tw-ml-2">
           BUBBALICOUS IS HIS NAME.
         </h4>
-        <img src="/Static/looking-at-angels-square.jpeg"
+        <img src="/Static/looking-at-angels-square.webp"
           class="tw-w-auto tw-h-1/4 tw-transition-all tw-duration-1000 tw-ease-out tw-translate-y-1/2 hidden clip-circle"
           alt="Image" />
         <img src="Static/fav-bubba-photo-square.jpeg"
           class="tw-w-auto tw-h-1/4 tw-transition-all tw-duration-1000 tw-ease-out tw-translate-y-1/2 hidden clip-circle"
           alt="Image" />
-        <img src="/Static/firebubba-square.jpeg"
+        <img src="/Static/firebubba-square.webp"
           class="tw-w-auto tw-h-1/4 tw-transition-all tw-duration-1000 tw-ease-out tw-translate-y-1/2 hidden clip-circle"
           alt="Image" />
         <!-- <img src="https://github.com/JuanSierra99/juansierra99.github.io/raw/main/Static/poker-face Large.jpeg"
           class="tw-w-auto tw-h-1/4 tw-transition-all tw-duration-1000 tw-ease-out tw-translate-y-1/2 hidden clip-circle"
           alt="Image" /> -->
       </div>
-      <button class="tw-text-white sm:tw-text-4xl lg:tw-text-6xl tw-font-extrabold cool-bold-font tw-block tw-bg-red-500 tw-ml-auto tw-mr-auto tw-p-4 tw-w-full"
-      id="elevator">
+      <button
+        class="tw-text-green-300 sm:tw-text-4xl lg:tw-text-6xl tw-font-extrabold cool-bold-font tw-block tw-bg-red-500 tw-ml-auto tw-mr-auto tw-p-4 tw-w-full"
+        id="elevator">
         PRESS ME!!!
       </button>
+      <div class="tw-h-10">
+
+      </div>
     </div>
     <script src="./script.js"></script>
     <script src="./Elevator.js"></script>
@@ -273,12 +280,12 @@
       // Simple elevator usage.
       var elementButton = document.getElementById('elevator');
       var elevator = new Elevator({
-          element: elementButton,
-          mainAudio: 'Static/sounds/elevator_music.mov', //Music by Bensound.com/royalty-free-music License code: 8VBZ8HZARZAOVHDQ
-          endAudio:  './Static/sounds/ding.mov'
+        element: elementButton,
+        mainAudio: 'Static/sounds/elevator_music.mov', //Music by Bensound.com/royalty-free-music License code: 8VBZ8HZARZAOVHDQ
+        endAudio: './Static/sounds/ding.mov'
       });
 
-  </script>
+    </script>
 </body>
 
 </html>
