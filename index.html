@@ -2,13 +2,11 @@
 <html>
 
 <head>
-  <!-- Add Bootstrap CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="/dist/output.css" rel="stylesheet" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juan Sierra Portfolio</title>
-  <!-- <link rel="icon" href="/Static/linkedin.svg" type="image/svg+xml"> -->
   <style>
     html {
       font-size: 26px;
@@ -68,14 +66,39 @@
   </style>
 </head>
 
-<body class="tw-w-screen tw-text-base tw-p-1 tw-pt-0 tw-bg-black cool-font">
+<body
+  class="tw-w-screen tw-text-xs sm:tw-text-sm md:tw-text-base lg:tw-text-2xl xl:tw-text-4xl tw-p-1 tw-pt-0 tw-bg-black cool-font">
   <nav
-    class="navbar tw-z-30 tw-ml-auto tw-mr-auto tw-sticky tw-top-0 tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2  sm:tw-w-11/12 lg:tw-max-w-screen-lg tw-backdrop-blur-3xl tw-bg-opacity-70 tw-bg-gray-900 sm:tw-text-base lg:tw-text-xl"
+    class="navbar tw-z-30 md:tw-hidden tw-w-full tw-ml-auto tw-mr-auto tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2 tw-backdrop-blur-3xl tw-bg-opacity-70 tw-bg-gray-900">
+    <div class="container-fluid">
+      <a class="tw-text-blue-300" href="#">J.S</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="tw-text-white">=</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active tw-text-white hover:tw-text-yellow-400" aria-current="page"
+              href="#scrollspyHeading1">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tw-text-white  hover:tw-text-yellow-400" href="#scrollspyHeading2">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tw-text-white hover:tw-text-yellow-400" href="#scrollspyHeading3">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav
+    class="navbar tw-hidden md:tw-flex tw-z-30 tw-ml-auto tw-mr-auto tw-sticky tw-top-0 tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2  sm:tw-w-11/12 lg:tw-max-w-screen-lg tw-backdrop-blur-3xl tw-bg-opacity-70 tw-bg-gray-900 sm:tw-text-base lg:tw-text-xl"
     style="
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
        ">
-    <p class="tw-text-blue-400 tw-font-extrabold" href="#">JUAN S.</p>
+    <p class="tw-text-blue-300 tw-font-extrabold">Juan Sierra</p>
     <ul class="nav nav-pills">
       <li class="nav-item">
         <a class="nav-link tw-text-white tw-font-extrabold" href="#scrollspyHeading1">Projects</a>
@@ -96,24 +119,24 @@
       <div class="tw-flex tw-justify-evenly">
         <div class="">
           <a href="https://www.linkedin.com/in/juan-sierra-971837120" class=""><img src="./Static/linkedin.svg"
-              class="sm:tw-h-8 lg:tw-h-10"></a>
+              class="tw-h-6 sm:tw-h-7 lg:tw-h-10"></a>
         </div>
 
         <a href="./Static/Fullstack-Resume.pdf" download="Juan-Sierra-Resume.pdf" class=""><img
-            src="./Static/file-solid.svg" class="sm:tw-h-8 lg:tw-h-10"></a>
+            src="./Static/file-solid.svg" class="tw-h-6 sm:tw-h-8 lg:tw-h-10"></a>
         <a href="https://github.com/JuanSierra99" class=""><img src="./Static/github.svg"
-            class="sm:tw-h-8 lg:tw-h-10"></a>
+            class="tw-h-6 sm:tw-h-8 lg:tw-h-10"></a>
       </div>
     </div>
     <h4 id="scrollspyHeading1"
-      class="tw-text-white tw-text-center sm:tw-text-4xl lg:tw-text-6xl tw-mb-2 cool-bold-font tw-font-extrabold">
+      class="tw-text-white tw-text-center tw-text-2xl sm:tw-text-4xl lg:tw-text-6xl tw-mb-2 cool-bold-font tw-font-extrabold">
       PROJECTS
     </h4>
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div id="BucketBuddy">
-            <div class="card tw-ml-auto tw-mr-auto sm:tw-text-2xl lg:tw-text-4xl tw-w-3/4 ">
+            <div class="card tw-ml-auto tw-mr-auto tw-w-3/4 ">
               <img src="/Static/bucket-buddy-home.webp" class="card-img-top" alt="...">
               <div class="card-body tw-bg-gray-800 tw-text-white lg:tw-hidden">
                 <h5 class="card-title tw-font-bold">Bucket Buddy</h5>
@@ -122,8 +145,8 @@
                   create lists that can help them keep track of tasks they would like to complete. Bucket Buddy is
                   designed to help individuals who struggle with managing their goals.</p>
                 <a href="https://github.com/JuanSierra99/BucketBuddy"
-                  class="tw-block tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-w-1/2 tw-p-1 tw-rounded-2xl tw-ml-auto tw-mr-auto"><img
-                    src="./Static/github.svg" class="sm:tw-h-8 tw-ml-auto tw-mr-auto"></a>
+                  class="tw-block tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-w-1/2 tw-p-1 tw-mt-1 tw-rounded-2xl tw-ml-auto tw-mr-auto"><img
+                    src="./Static/github.svg" class="tw-h-4 sm:tw-h-8 tw-ml-auto tw-mr-auto"></a>
               </div>
               <div class="tw-hidden md:tw-block">
               </div>
@@ -132,7 +155,7 @@
         </div>
         <div class="carousel-item">
           <div id="decibel-warrior">
-            <div class="card tw-ml-auto tw-mr-auto tw-w-3/4 sm:tw-text-2xl lg:tw-text-4xl">
+            <div class="card tw-ml-auto tw-mr-auto tw-w-3/4">
               <img src="/Static/decibel-warrior.webp" class="card-img-top" alt="...">
               <div class="card-body tw-bg-gray-800 tw-text-white lg:tw-hidden">
                 <h5 class="card-title tw-font-bold">Decibel Warrior</h5>
@@ -142,14 +165,14 @@
                   "Decible Warrior"!</p>
                 <a href="https://github.com/JuanSierra99/decibel_warrior"
                   class="tw-block tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-w-1/2 tw-p-1 tw-rounded-2xl tw-mt-1 tw-ml-auto tw-mr-auto"><img
-                    src="./Static/github.svg" class="sm:tw-h-8 tw-ml-auto tw-mr-auto"></a>
+                    src="./Static/github.svg" class="tw-h-4 sm:tw-h-8 tw-ml-auto tw-mr-auto"></a>
               </div>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div id="film-website">
-            <div class="card tw-block tw-ml-auto tw-mr-auto tw-w-3/4 sm:tw-text-2xl lg:tw-text-4xl">
+            <div class="card tw-block tw-ml-auto tw-mr-auto tw-w-3/4">
               <img src="/Static/film-website.webp" class="card-img-top" alt="...">
               <div class="card-body tw-bg-gray-800 tw-text-white lg:tw-hidden">
                 <h5 class="card-title tw-font-bold">Film Website</h5>
@@ -161,7 +184,7 @@
                 </p>
                 <a href="https://github.com/JuanSierra99/Film-Site"
                   class="tw-block tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-w-1/2 tw-p-1 tw-rounded-2xl tw-mt-1 tw-ml-auto tw-mr-auto"><img
-                    src="./Static/github.svg" class="sm:tw-h-8 tw-ml-auto tw-mr-auto"></a>
+                    src="./Static/github.svg" class="tw-h-4 sm:tw-h-8 tw-ml-auto tw-mr-auto"></a>
               </div>
             </div>
           </div>
@@ -189,19 +212,20 @@
 
     <div id="education-container" class="tw-pt-4 tw-flex tw-flex-col">
       <h4 id="scrollspyHeading2"
-        class="sm:tw-text-4xl lg:tw-text-6xl tw-text-center tw-text-white cool-bold-font tw-font-extrabold tw-mb-2">
+        class="tw-text-2xl sm:tw-text-4xl lg:tw-text-6xl tw-text-center tw-text-white cool-bold-font tw-font-extrabold tw-mb-2">
         EDUCATION
       </h4>
-      <h id="im-a-titan" class="tw-text-blue-600 sm:tw-text-3xl tw-text-center tw-block">A
+      <h id="im-a-titan" class="tw-text-blue-600 tw-text-xl sm:tw-text-3xl tw-text-center tw-block">A
         PROUD
       </h>
       <h id="im-a-titan"
-        class="sm:tw-text-9xl tw-text-center tw-font-extrabold tw-block tw-text-orange-500 cool-bold-font">TITAN!</h>
+        class="tw-text-6xl sm:tw-text-9xl tw-text-center tw-font-extrabold tw-block tw-text-orange-500 cool-bold-font">
+        TITAN!</h>
       <img src="https://raw.githubusercontent.com/JuanSierra99/juansierra99.github.io/main/Static/Titan.png"
         class="sm:tw-w-3/4 md:tw-max-w-screen-lg tw-translate-y-1/2 hidden tw-transition-all tw-duration-2500 tw-relative tw-z-0 tw-ml-auto tw-mr-auto" />
       <div class="tw-overflow-scroll tw-bg-gray-900 tw-flex-1 tw-z-10 tw-flex">
         <p
-          class="sm:tw-text-2xl lg:tw-text-4xl tw-text-center tw-text-white tw-font-extrabold tw-border-dashed tw-border-black tw-h-fit tw-self-center">
+          class="tw-text-center tw-text-white tw-font-extrabold tw-border-dashed tw-border-black tw-h-fit tw-self-center">
           In 2023, I successfully completed my academic journey at <span class="tw-text-orange-500 cool-bold-font">Cal
             State University, Fullerton,</span>
           graduating with distinction and achieving a commendable GPA of 3.6. I have earned a <span
@@ -216,18 +240,17 @@
       <div id="i-love-film" class="tw-flex tw-flex-col tw-ml-auto tw-mr-auto lg:tw-max-w-screen-xl">
         <div class="tw-sticky tw-top-0 tw-z-50 tw-ml-auto tw-mr-auto lg:tw-w-11/12">
           <h4 id="scrollspyHeading3"
-            class="sm:tw-text-2xl lg:tw-text-4xl tw-text-white tw-text-center cool-bold-font tw-font-extrabold tw-absolute tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2">
+            class="tw-text-gray-200 tw-text-center cool-bold-font tw-font-extrabold tw-absolute tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2">
             ABOUT ME
           </h4>
-          <img id="film-border" src="/Static/Filmstrip.png"
-            class="tw-h-auto film-backdrop-filter tw-max-h-screen" />
+          <img id="film-border" src="/Static/Filmstrip.png" class="tw-h-auto film-backdrop-filter tw-max-h-screen" />
         </div>
         <img src="./Static/flowers2 Large.webp" id="image1" class="tw-h-1/6 tw-w-full inverted-film" alt="Image" />
         <img src="./Static/whitebud Large.webp" id="image2" class="tw-h-full tw-w-full tw-object-cover inverted-film"
           alt="Image" />
         <img src="./Static/glitch Large.webp" id="image3" class=" sm:tw-h-full tw-w-full tw-object-cover inverted-film"
           alt="Image" />
-        <div class="tw-flex tw-overflow-hidden tw-pb-16 tw-z-40">
+        <div class="tw-flex tw-overflow-hidden tw-z-40">
           <img src="./Static//oaxaca-building Large.webp" class="tw-h-full tw-w-1/2 tw-object-cover inverted-film"
             alt="Image" id="last-film-images" />
           <img src="./Static/flowers Large.webp" class="tw-h-full tw-w-1/2 tw-object-cover inverted-film" alt="Image" />
