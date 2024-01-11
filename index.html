@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html>
-<!-- Add Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-<link href="/dist/output.css" rel="stylesheet" />
-<style>
-  html {
-    font-size: 26px;
-  }
 
-  .hidden {
-    opacity: 0;
-  }
+<head>
+  <!-- Add Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Sierra Portfolio</title>
+  <!-- <link rel="icon" href="/Static/linkedin.svg" type="image/svg+xml"> -->
+  <style>
+    html {
+      font-size: 26px;
+    }
 
-  .show {
-    opacity: 100%;
-    transform: translateX(0);
-    transform: translateY(0);
-  }
+    .hidden {
+      opacity: 0;
+    }
 
-  .clip-circle {
-    clip-path: circle(39% at center)
-  }
+    .show {
+      opacity: 100%;
+      transform: translateX(0);
+      transform: translateY(0);
+    }
 
-  @font-face {
-    font-family: 'cool-font';
-    src: url(./Static/fonts/ChakraPetch-Regular.ttf);
-  }
+    .clip-circle {
+      clip-path: circle(39% at center)
+    }
 
-  @font-face {
-    font-family: 'cool-bold-font';
-    src: url(./Static/fonts/ChakraPetch-Bold.ttf);
-  }
+    @font-face {
+      font-family: 'cool-font';
+      src: url(./Static/fonts/ChakraPetch-Regular.ttf);
+    }
 
-  .cool-font {
-    font-family: 'cool-font';
-  }
+    @font-face {
+      font-family: 'cool-bold-font';
+      src: url(./Static/fonts/ChakraPetch-Bold.ttf);
+    }
 
-  .cool-bold-font {
-    font-family: "cool-bold-font";
-  }
+    .cool-font {
+      font-family: 'cool-font';
+    }
 
-  .inverted-film {
-    /* Hardware Acceleration */
-    -webkit-transform: translateZ(0); 
-    -webkit-perspective: 1000;
-    -webkit-backface-visibility: hidden;
+    .cool-bold-font {
+      font-family: "cool-bold-font";
+    }
 
-    filter: hue-rotate(120deg);
-    -webkit-filter: hue-rotate(120deg);
-  }
+    .inverted-film {
+      /* Hardware Acceleration */
+      -webkit-transform: translateZ(0);
+      -webkit-perspective: 1000;
+      -webkit-backface-visibility: hidden;
 
-  .film-backdrop-filter {
-    /* Hardware Acceleration */
-    -webkit-transform: translateZ(0);
-    -webkit-perspective: 1000;
-    -webkit-backface-visibility: hidden;
+      filter: hue-rotate(120deg);
+      -webkit-filter: hue-rotate(120deg);
+    }
 
-    -webkit-backdrop-filter: hue-rotate(240deg);
-    backdrop-filter: hue-rotate(240deg);
-  }
-</style>
+    .film-backdrop-filter {
+      /* Hardware Acceleration */
+      -webkit-transform: translateZ(0);
+      -webkit-perspective: 1000;
+      -webkit-backface-visibility: hidden;
+
+      -webkit-backdrop-filter: hue-rotate(240deg);
+      backdrop-filter: hue-rotate(240deg);
+    }
+  </style>
+</head>
 
 <body class="tw-w-screen tw-text-base tw-p-1 tw-pt-0 tw-bg-black cool-font">
   <nav
-    class="navbar tw-z-30 tw-ml-auto tw-mr-auto tw-sticky tw-top-0 tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2 tw-w-11/12 tw-backdrop-blur-3xl tw-bg-opacity-70 tw-bg-gray-900 sm:tw-text-base lg:tw-text-xl"
+    class="navbar tw-z-30 tw-ml-auto tw-mr-auto tw-sticky tw-top-0 tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2  sm:tw-w-11/12 lg:tw-max-w-screen-lg tw-backdrop-blur-3xl tw-bg-opacity-70 tw-bg-gray-900 sm:tw-text-base lg:tw-text-xl"
     style="
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
@@ -98,7 +105,6 @@
             class="sm:tw-h-8 lg:tw-h-10"></a>
       </div>
     </div>
-
     <h4 id="scrollspyHeading1"
       class="tw-text-white tw-text-center sm:tw-text-4xl lg:tw-text-6xl tw-mb-2 cool-bold-font tw-font-extrabold">
       PROJECTS
@@ -111,7 +117,7 @@
               <img src="/Static/bucket-buddy-home.webp" class="card-img-top" alt="...">
               <div class="card-body tw-bg-gray-800 tw-text-white lg:tw-hidden">
                 <h5 class="card-title tw-font-bold">Bucket Buddy</h5>
-                <p class="card-text tw-line-clamp-6 tw-overflow-scroll">A web app that allows users to organize their
+                <p class="card-text tw-line-clamp-5 tw-overflow-scroll">A web app that allows users to organize their
                   life by giving them a simple way to
                   create lists that can help them keep track of tasks they would like to complete. Bucket Buddy is
                   designed to help individuals who struggle with managing their goals.</p>
@@ -128,9 +134,9 @@
           <div id="decibel-warrior">
             <div class="card tw-ml-auto tw-mr-auto tw-w-3/4 sm:tw-text-2xl lg:tw-text-4xl">
               <img src="/Static/decibel-warrior.webp" class="card-img-top" alt="...">
-              <div class="card-body tw-bg-gray-800 tw-text-white">
+              <div class="card-body tw-bg-gray-800 tw-text-white lg:tw-hidden">
                 <h5 class="card-title tw-font-bold">Decibel Warrior</h5>
-                <p class="card-text tw-line-clamp-6 tw-overflow-scroll">The thrilling mobile app that keeps you on your
+                <p class="card-text tw-line-clamp-5 tw-overflow-scroll">The thrilling mobile app that keeps you on your
                   toes! Keep your finger within the moving radius, or face the hilarious consequence of an audio clip
                   featuring a man's uproarious yelling. Stay sharp, stay entertained, and stay on the screen with
                   "Decible Warrior"!</p>
@@ -145,9 +151,9 @@
           <div id="film-website">
             <div class="card tw-block tw-ml-auto tw-mr-auto tw-w-3/4 sm:tw-text-2xl lg:tw-text-4xl">
               <img src="/Static/film-website.webp" class="card-img-top" alt="...">
-              <div class="card-body tw-bg-gray-800 tw-text-white">
+              <div class="card-body tw-bg-gray-800 tw-text-white lg:tw-hidden">
                 <h5 class="card-title tw-font-bold">Film Website</h5>
-                <p class="card-text tw-line-clamp-6 tw-overflow-scroll">A web application that maintain a collection of
+                <p class="card-text tw-line-clamp-5 tw-overflow-scroll">A web application that maintain a collection of
                   your favorite film photos. The
                   backend api is built with python and uses machine learning for object recognition, Numpy for image
                   masking, and openai api for image replacement using artifical intelligence. Simple to use, and
@@ -192,60 +198,42 @@
       <h id="im-a-titan"
         class="sm:tw-text-9xl tw-text-center tw-font-extrabold tw-block tw-text-orange-500 cool-bold-font">TITAN!</h>
       <img src="https://raw.githubusercontent.com/JuanSierra99/juansierra99.github.io/main/Static/Titan.png"
-        class="sm:tw-w-full tw-translate-y-1/2 hidden tw-transition-all tw-duration-2500 tw-relative tw-z-0" />
+        class="sm:tw-w-3/4 md:tw-max-w-screen-lg tw-translate-y-1/2 hidden tw-transition-all tw-duration-2500 tw-relative tw-z-0 tw-ml-auto tw-mr-auto" />
       <div class="tw-overflow-scroll tw-bg-gray-900 tw-flex-1 tw-z-10 tw-flex">
         <p
           class="sm:tw-text-2xl lg:tw-text-4xl tw-text-center tw-text-white tw-font-extrabold tw-border-dashed tw-border-black tw-h-fit tw-self-center">
-          In 2023, I successfully completed my academic journey at Cal State University, Fullerton,
-          graduating with distinction and achieving a commendable GPA of 3.6. I have earned a Bachelor's degree in
-          Computer
-          Science, marking a significant accomplishment in my academic career.
+          In 2023, I successfully completed my academic journey at <span class="tw-text-orange-500 cool-bold-font">Cal
+            State University, Fullerton,</span>
+          graduating with distinction and achieving a commendable GPA of 3.6. I have earned a <span
+            class="tw-text-blue-600 cool-bold-font">Bachelor's degree in
+            Computer
+            Science,</span> marking a significant accomplishment in my academic career.
         </p>
       </div>
     </div>
 
     <div class="tw-w-full tw-min-h-screen" id="about-me-section">
-      <div id="i-love-film" class="tw-flex tw-relative tw-flex-col">
-        <div class="tw-sticky tw-top-0 tw-z-50">
+      <div id="i-love-film" class="tw-flex tw-flex-col tw-ml-auto tw-mr-auto lg:tw-max-w-screen-xl">
+        <div class="tw-sticky tw-top-0 tw-z-50 tw-ml-auto tw-mr-auto lg:tw-w-11/12">
           <h4 id="scrollspyHeading3"
             class="sm:tw-text-2xl lg:tw-text-4xl tw-text-white tw-text-center cool-bold-font tw-font-extrabold tw-absolute tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2">
             ABOUT ME
           </h4>
-          <img id="film-border" src="/Static/Filmstrip.png" class="tw-z-50 tw-w-full tw-h-auto film-backdrop-filter" />
+          <img id="film-border" src="/Static/Filmstrip.png"
+            class="tw-h-auto film-backdrop-filter tw-max-h-screen" />
         </div>
-        <!-- <img id="film-border" src="/Static/Filmstrip.png" class="tw-z-50 tw-w-full tw-h-auto tw-sticky tw-top-0 tw-backdrop-hue-rotate-180"/> -->
-        <div class="tw-relative tw-flex-grow tw-overflow-hidden">
-          <!-- <p
-            class="sm:tw-text-6xl lg:tw-text-8xl tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-text-white tw-z-10 tw-absolute tw-font-extrabold cool-bold-font">
-            I</p> -->
-          <img src="./Static/flowers2 Large.webp"
-            id="image1"
-            class="tw-h-full tw-overflow-clip tw-w-full tw-object-cover tw-transition-all tw-duration-700 inverted-film"
-            alt="Image" />
-        </div>
-        <div class="tw-relative tw-flex-grow tw-overflow-hidden">
-          <!-- <p
-            class="sm:tw-text-6xl lg:tw-text-8xl tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-text-white tw-z-10 tw-absolute tw-font-extrabold cool-bold-font">
-            LOVE</p> -->
-          <img src="./Static/whitebud Large.webp"
-            id="image2" class="tw-h-full tw-w-full tw-object-cover tw-transition-all tw-duration-700  inverted-film"
-            alt="Image" />
-        </div>
-        <div class="tw-relative tw-flex-grow tw-overflow-hidden">
-          <!-- <p
-            class="sm:tw-text-6xl lg:tw-text-8xl tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-text-white tw-z-10 tw-absolute tw-font-extrabold cool-bold-font">
-            FILM</p> -->
-          <img src="./Static/glitch Large.webp"
-            id="image3" class=" sm:tw-h-full tw-w-full tw-object-cover tw-transition-all tw-duration-700  inverted-film"
-            alt="Image" />
-        </div>
+        <img src="./Static/flowers2 Large.webp" id="image1" class="tw-h-1/6 tw-w-full inverted-film" alt="Image" />
+        <img src="./Static/whitebud Large.webp" id="image2" class="tw-h-full tw-w-full tw-object-cover inverted-film"
+          alt="Image" />
+        <img src="./Static/glitch Large.webp" id="image3" class=" sm:tw-h-full tw-w-full tw-object-cover inverted-film"
+          alt="Image" />
         <div class="tw-flex tw-overflow-hidden tw-pb-16 tw-z-40">
-          <img src="./Static//oaxaca-building Large.webp"
-            class="tw-h-full tw-w-1/2 tw-object-cover inverted-film" alt="Image" id="last-film-images" />
-          <img src="./Static/flowers Large.webp"
-            class="tw-h-full tw-w-1/2 tw-object-cover inverted-film" alt="Image" />
+          <img src="./Static//oaxaca-building Large.webp" class="tw-h-full tw-w-1/2 tw-object-cover inverted-film"
+            alt="Image" id="last-film-images" />
+          <img src="./Static/flowers Large.webp" class="tw-h-full tw-w-1/2 tw-object-cover inverted-film" alt="Image" />
         </div>
       </div>
+
       <div class="tw-relative tw-overflow-scroll tw-overflow-y-hidden tw-flex tw-bg-yellow-50">
         <h4 class="tw-text-red-600 sm:tw-text-2xl lg:tw-text-4xl tw-mt-auto tw-mb-auto tw-font-extrabold tw-ml-2">
           BUBBALICOUS IS HIS NAME.
