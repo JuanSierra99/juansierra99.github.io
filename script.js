@@ -40,14 +40,14 @@
 
 const observer = new IntersectionObserver((target) => {
   target.forEach((t) => {
-    if (t.isIntersecting && t.target.complete) {
+    if (t.isIntersecting) {
       t.target.classList.add("show");
       observer.unobserve(t.target);
     }
   });
 }, null);
 
-const header_text = document.getElementById("scrollspyHeading3");
+const header_text = document.getElementById("film-text");
 const process_image = new IntersectionObserver(
   (inverted_images) => {
     console.log(inverted_images);
