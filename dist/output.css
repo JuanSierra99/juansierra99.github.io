@@ -949,6 +949,22 @@ video {
   width: 15rem;
 }
 
+.tw-w-2\/4 {
+  width: 50%;
+}
+
+.tw-w-3\/5 {
+  width: 60%;
+}
+
+.tw-w-3\/6 {
+  width: 50%;
+}
+
+.tw-w-4\/6 {
+  width: 66.666667%;
+}
+
 .tw-max-w-fit {
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -1701,6 +1717,14 @@ video {
 
   .sm\:tw-w-full {
     width: 100%;
+  }
+
+  .sm\:tw-w-3\/4 {
+    width: 75%;
+  }
+
+  .sm\:tw-w-3\/5 {
+    width: 60%;
   }
 
   .sm\:tw-text-2xl {
