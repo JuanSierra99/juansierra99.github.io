@@ -44,6 +44,11 @@
       font-family: "cool-bold-font";
     }
 
+    .line-breathing{
+      height: 70px;
+      border-radius: 50%;
+    }
+
     .inverted-film {
       /* Hardware Acceleration */
       -webkit-transform: translateZ(0);
@@ -69,7 +74,7 @@
 <body
   class="tw-w-screen tw-text-xs sm:tw-text-sm md:tw-text-base lg:tw-text-2xl xl:tw-text-4xl tw-pt-0 cool-font tw-bg-gray-900">
   <nav
-    class="navbar tw-z-30 md:tw-hidden tw-w-full tw-ml-auto tw-mr-auto tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2 tw-backdrop-blur-3xl tw-bg-opacity-60 tw-bg-gray-800">
+    class="navbar tw-z-30 md:tw-hidden tw-w-10/12 tw-ml-auto tw-mr-auto tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2 tw-backdrop-blur-3xl tw-bg-opacity-60 tw-bg-gray-800">
     <div class="container-fluid">
       <a class="tw-text-blue-300" href="#">J.S</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -79,11 +84,11 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="tw-p-2 tw-pt-2 tw-text-white  hover:tw-text-yellow-400" href="#education-section">Education</a>
+            <a class="nav-link tw-text-white  hover:tw-text-yellow-400" href="#education-section">Education</a>
           </li>
           <li class="nav-item">
-            <a class="tw-p-2 tw-pt-2 tw-text-white hover:tw-text-yellow-400" aria-current="page"
-              href="#projects-section">Projects</a>
+            <a class="nav-link tw-text-white hover:tw-text-yellow-400" aria-current="page"
+            href="#projects-section">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link tw-text-white hover:tw-text-yellow-400" href="#about-me-section">About</a>
@@ -307,4 +312,5 @@
     });
   </script>
 </body>
+
 </html>
