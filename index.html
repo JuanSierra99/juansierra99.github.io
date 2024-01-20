@@ -67,9 +67,9 @@
 </head>
 
 <body
-  class="tw-w-screen tw-text-xs sm:tw-text-sm md:tw-text-base lg:tw-text-2xl xl:tw-text-4xl tw-p-1 tw-pt-0 tw-bg-black cool-font">
+  class="tw-w-screen tw-text-xs sm:tw-text-sm md:tw-text-base lg:tw-text-2xl xl:tw-text-4xl tw-pt-0 cool-font tw-bg-gray-900">
   <nav
-    class="navbar tw-z-30 md:tw-hidden tw-w-full tw-ml-auto tw-mr-auto tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2 tw-backdrop-blur-3xl tw-bg-opacity-70 tw-bg-gray-900">
+    class="navbar tw-z-30 md:tw-hidden tw-w-full tw-ml-auto tw-mr-auto tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2 tw-backdrop-blur-3xl tw-bg-opacity-60 tw-bg-gray-800">
     <div class="container-fluid">
       <a class="tw-text-blue-300" href="#">J.S</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -79,10 +79,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link tw-text-white  hover:tw-text-yellow-400" href="#education-section">Education</a>
+            <a class="tw-p-2 tw-pt-2 tw-text-white  hover:tw-text-yellow-400" href="#education-section">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link tw-text-white hover:tw-text-yellow-400" aria-current="page"
+            <a class="tw-p-2 tw-pt-2 tw-text-white hover:tw-text-yellow-400" aria-current="page"
               href="#projects-section">Projects</a>
           </li>
           <li class="nav-item">
@@ -93,7 +93,7 @@
     </div>
   </nav>
   <nav
-    class="navbar tw-hidden md:tw-flex tw-z-30 tw-ml-auto tw-mr-auto tw-sticky tw-top-0 tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2 sm:tw-w-11/12 lg:tw-max-w-screen-lg lg:tw-text-2xl tw-backdrop-blur-3xl tw-bg-opacity-70 tw-bg-gray-900"
+    class="navbar tw-hidden md:tw-flex tw-z-30 tw-ml-auto tw-mr-auto  tw-mt-5 tw-rounded-lg tw-pl-2 tw-pr-2 sm:tw-w-11/12 lg:tw-max-w-screen-lg lg:tw-text-2xl tw-backdrop-blur-3xl tw-bg-opacity-60 tw-bg-gray-800"
     style="
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
@@ -101,19 +101,22 @@
     <p class="tw-text-blue-300 tw-font-extrabold">Juan Sierra</p>
     <ul class="nav nav-pills">
       <li class="nav-item">
-        <a class="nav-link tw-text-white tw-font-extrabold" href="#education-section">Education</a>
+        <a class="tw-block tw-p-2 hover:tw-text-orange-500 tw-text-white tw-font-extrabold"
+          href="#education-section">Education</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link tw-text-white tw-font-extrabold" href="#projects-section">Projects</a>
+        <a class="tw-block tw-p-2 hover:tw-text-orange-500 tw-text-white tw-font-extrabold"
+          href="#projects-section">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link tw-text-white tw-font-extrabold" href="#about-me-section">Me!</a>
+        <a class="tw-block tw-p-2 hover:tw-text-orange-500 tw-text-white tw-font-extrabold"
+          href="#about-me-section">Me!</a>
       </li>
     </ul>
   </nav>
 
   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
-    data-bs-smooth-scroll="true" class="scrollspy-example rounded-2" tabindex="0" style="background-color: black">
+    data-bs-smooth-scroll="true" class="scrollspy-example rounded-2" tabindex="0">
     <div class="tw-mt-2 tw-mb-2">
       <p class="tw-text-white tw-text-center">CONTACT ME:</p>
       <div class="tw-flex tw-justify-evenly">
@@ -129,7 +132,7 @@
       </div>
     </div>
 
-    <div id="education-container" class="tw-flex tw-flex-col tw-pb-2">
+    <div id="education-container" class="tw-flex tw-flex-col tw-pb-2 tw-relative">
       <h4 id="education-section"
         class="tw-text-2xl sm:tw-text-4xl lg:tw-text-6xl tw-text-center tw-text-white cool-bold-font tw-font-extrabold tw-mb-2">
         EDUCATION
@@ -141,10 +144,10 @@
         class="tw-text-6xl sm:tw-text-9xl tw-text-center tw-font-extrabold tw-block tw-text-orange-500 cool-bold-font">
         TITAN!</h>
       <img src="./Static/titan.webp"
-        class="sm:tw-w-3/4 md:tw-max-w-screen-lg tw-translate-y-1/2 hidden tw-transition-all tw-duration-2500 tw-relative tw-z-0 tw-ml-auto tw-mr-auto" />
-      <div class="tw-overflow-scroll tw-bg-gray-900 tw-flex-1 tw-z-10 tw-flex">
-        <p
-          class="tw-text-center tw-text-white tw-font-extrabold tw-border-dashed tw-border-black tw-h-fit tw-self-center tw-p-2">
+        class="sm:tw-w-2/4 md:tw-max-w-screen-md tw-translate-y-1/2 hidden tw-transition-all tw-duration-2500 tw-relative tw-z-0 tw-ml-auto tw-mr-auto" />
+      <div
+        class="tw-overflow-scroll tw-bg-gray-800 tw-flex-1 tw-w-11/12 tw-ml-auto tw-mr-auto tw-rounded-lg tw-z-10 shad">
+        <p class="tw-text-center tw-text-white tw-font-extrabold tw-h-fit tw-self-center tw-p-2">
           In 2023, I successfully completed my academic journey at <span class="tw-text-orange-500 cool-bold-font">Cal
             State University, Fullerton,</span>
           graduating with distinction and achieving a GPA of 3.6. I have earned a <span
@@ -154,7 +157,7 @@
         </p>
       </div>
     </div>
-    
+
     <h4 id="projects-section"
       class="tw-text-white tw-text-center tw-text-2xl sm:tw-text-4xl lg:tw-text-6xl tw-mb-2 cool-bold-font tw-font-extrabold">
       PROJECTS
@@ -172,8 +175,10 @@
                   create lists that can help them keep track of tasks they would like to complete. Bucket Buddy is
                   designed to help individuals who struggle with managing their goals.</p>
                 <a href="https://github.com/JuanSierra99/BucketBuddy"
-                  class="tw-block tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-w-1/2 tw-p-1 tw-mt-1 tw-rounded-2xl tw-ml-auto tw-mr-auto"><img
-                    src="./Static/github.svg" class="tw-h-4 sm:tw-h-8 tw-ml-auto tw-mr-auto"></a>
+                  class="tw-flex tw-items-center tw-max-w-fit tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-p-1 tw-mt-1 tw-rounded-2xl tw-ml-auto tw-mr-auto"><img
+                    src="./Static/github.svg" class="tw-h-4 sm:tw-h-8 md:tw-h-9 lg:tw-h-10 xl:tw-h-11 2xl:tw-h-12">
+                  <p class="tw-ml-1">source code</p>
+                </a>
               </div>
               <div class="tw-hidden md:tw-block">
               </div>
@@ -191,8 +196,10 @@
                   featuring a man's uproarious yelling. Stay sharp, stay entertained, and stay on the screen with
                   "Decible Warrior"!</p>
                 <a href="https://github.com/JuanSierra99/decibel_warrior"
-                  class="tw-block tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-w-1/2 tw-p-1 tw-rounded-2xl tw-mt-1 tw-ml-auto tw-mr-auto"><img
-                    src="./Static/github.svg" class="tw-h-4 sm:tw-h-8 tw-ml-auto tw-mr-auto"></a>
+                  class="tw-flex tw-items-center tw-max-w-fit tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-min-w-1/2 tw-justify-between tw-p-1 tw-rounded-2xl tw-mt-1 tw-ml-auto tw-mr-auto"><img
+                    src="./Static/github.svg" class="tw-h-4 sm:tw-h-8 md:tw-h-9 lg:tw-h-10 xl:tw-h-11 2xl:tw-h-12">
+                  <p class="tw-ml-1">source code</p>
+                </a>
               </div>
             </div>
           </div>
@@ -210,8 +217,10 @@
                   pleasent to view.
                 </p>
                 <a href="https://github.com/JuanSierra99/Film-Site"
-                  class="tw-block tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-w-1/2 tw-p-1 tw-rounded-2xl tw-mt-1 tw-ml-auto tw-mr-auto"><img
-                    src="./Static/github.svg" class="tw-h-4 sm:tw-h-8 tw-ml-auto tw-mr-auto"></a>
+                  class="tw-flex tw-items-center tw-max-w-fit tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-min-w-1/2 tw-justify-between tw-p-1 tw-rounded-2xl tw-mt-1 tw-ml-auto tw-mr-auto"><img
+                    src="./Static/github.svg" class="tw-h-4 sm:tw-h-8 md:tw-h-9 lg:tw-h-10 xl:tw-h-11 2xl:tw-h-12">
+                  <p class="tw-ml-1">source code</p>
+                </a>
               </div>
             </div>
           </div>
@@ -237,7 +246,7 @@
       </div>
     </div>
 
-    <div class="tw-w-full tw-min-h-screen" id="about-me-section">
+    <div class="tw-w-full tw-min-h-screen tw-bg-transparent" id="about-me-section">
       <div id="i-love-film" class="tw-flex tw-flex-col tw-ml-auto tw-mr-auto lg:tw-max-w-screen-xl">
         <div class="tw-sticky tw-top-0 tw-ml-auto tw-mr-auto lg:tw-w-11/12 tw-z-50 film-backdrop-filter">
           <h4 id="film-text"
@@ -246,21 +255,24 @@
           </h4>
           <img id="film-border" src="./Static/Filmstrip.webp" class="tw-h-auto tw-max-h-screen" />
         </div>
-        <img src="./Static/flowers2 Large.webp" id="image1" class="tw-h-1/6 tw-w-full inverted-film" alt="Image" />
-        <img src="./Static/whitebud Large.webp" id="image2" class="tw-h-full tw-w-full tw-object-cover inverted-film"
+        <img src="./Static/flowers2 Large.webp" id="image1"
+          class="tw-h-auto sm:tw-w-full lg:tw-w-11/12 tw-ml-auto tw-mr-auto inverted-film" alt="Image" />
+        <img src="./Static/whitebud Large.webp" id="image2"
+          class="tw-h-auto sm:tw-w-full lg:tw-w-11/12 tw-object-cover tw-ml-auto tw-mr-auto inverted-film"
           alt="Image" />
-        <img src="./Static/glitch Large.webp" id="image3" class=" sm:tw-h-full tw-w-full tw-object-cover inverted-film"
+        <img src="./Static/glitch Large.webp" id="image3"
+          class="tw-h-auto sm:tw-w-full lg:tw-w-11/12 tw-object-cover tw-ml-auto tw-mr-auto inverted-film"
           alt="Image" />
-        <div class="tw-flex tw-overflow-hidden tw-z-40">
+        <div class="tw-flex tw-overflow-hidden tw-z-40 lg:tw-w-11/12 tw-ml-auto tw-mr-auto">
           <img src="./Static//oaxaca-building Large.webp" class="tw-h-full tw-w-1/2 tw-object-cover inverted-film"
             alt="Image" id="last-film-images" />
           <img src="./Static/flowers Large.webp" class="tw-h-full tw-w-1/2 tw-object-cover inverted-film" alt="Image" />
         </div>
       </div>
 
-      <div class="tw-relative tw-overflow-scroll tw-overflow-y-hidden tw-flex tw-bg-yellow-50">
+      <div class="tw-relative tw-overflow-scroll tw-overflow-y-hidden tw-flex tw-bg-yellow-50 ">
         <h4 class="tw-text-red-600 sm:tw-text-2xl lg:tw-text-4xl tw-mt-auto tw-mb-auto tw-font-extrabold tw-ml-2">
-          BUBBALICOUS IS HIS NAME.
+          <span class="tw-underline">BUBBALICOUS</span> IS HIS NAME.
         </h4>
         <img src="/Static/looking-at-angels-square.webp"
           class="tw-w-auto tw-h-1/4 tw-transition-all tw-duration-1000 tw-ease-out tw-translate-y-1/2 hidden clip-circle"
@@ -280,24 +292,19 @@
         id="elevator">
         PRESS ME!!!
       </button>
-      <div class="tw-h-10">
-
-      </div>
     </div>
-    <script src="./script.js"></script>
-    <script src="./Elevator.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-
-      // Simple elevator usage.
-      var elementButton = document.getElementById('elevator');
-      var elevator = new Elevator({
-        element: elementButton,
-        mainAudio: 'Static/sounds/elevator_music.mov', //Music by Bensound.com/royalty-free-music License code: 8VBZ8HZARZAOVHDQ
-        endAudio: './Static/sounds/ding.mov'
-      });
-
-    </script>
+  </div>
+  <script src="./script.js"></script>
+  <script src="./Elevator.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Simple elevator usage.
+    var elementButton = document.getElementById('elevator');
+    var elevator = new Elevator({
+      element: elementButton,
+      mainAudio: 'Static/sounds/elevator_music.mov', //Music by Bensound.com/royalty-free-music License code: 8VBZ8HZARZAOVHDQ
+      endAudio: './Static/sounds/ding.mov'
+    });
+  </script>
 </body>
-
 </html>
