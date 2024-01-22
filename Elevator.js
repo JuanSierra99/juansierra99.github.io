@@ -16,8 +16,8 @@ var Elevator = function (options) {
   var body = null;
   // Scroll vars
   var animation = null;
-  var duration = null; // ms
-  var customDuration = false;
+  var duration = 7500; // ms
+  var customDuration = true;
   var startTime = null;
   var startPosition = null;
   var endPosition = 0;
