@@ -13,13 +13,17 @@
     }
 
     .hidden {
-      opacity: 0;
+      
     }
 
-    .show {
-      opacity: 100%;
-      transform: translateX(0);
-      transform: translateY(0);
+    .show-star-wars-text {
+      opacity: 1;
+      transform: rotateX(40deg) translateY(0) !important;
+    }
+
+    .show-hidden{
+      opacity: 1;
+      transform: none !important;
     }
 
     .star-background {
@@ -46,12 +50,17 @@
     }
 
     .star-wars-parent {
-      perspective: 1000px;
+      perspective: 700px;
     }
 
-    .star-wars-text {
-      transform: rotateX(50deg);
-      transform-origin: 0% 20%;
+    .star-wars-text-scroll {      
+      transform: rotateX(40deg) translateY(95%);
+      transform-origin: 0% 0%;
+    }
+
+    .star-wars-text{
+      transform: rotateX(40deg);
+      transform-origin: 0% 0%;
     }
 
     .clip-circle {
@@ -191,9 +200,9 @@
       class="tw-text-6xl sm:tw-text-9xl tw-text-center tw-font-extrabold tw-block tw-text-orange-500 cool-bold-font">
       TITAN!</h>
     <img src="./Static/titan.webp"
-      class="tw-w-4/6 sm:tw-w-3/4 md:tw-max-w-screen-md tw-translate-y-1/2 hidden tw-transition-all tw-duration-2500 tw-relative tw-z-0 tw-ml-auto tw-mr-auto" />
+      class="tw-w-4/6 sm:tw-w-3/4 md:tw-max-w-screen-md tw-translate-y-1/2 hidden tw-transition-all tw-duration-2500 tw-opacity-90 tw-relative tw-z-0 tw-ml-auto tw-mr-auto" />
     <div
-      class="tw-overflow-scroll tw-bg-gray-800 tw-flex-1 tw-w-11/12 tw-ml-auto tw-mr-auto tw-rounded-lg tw-z-10 shad">
+      class="tw-overflow-scroll tw-bg-gray-800 tw-flex-1 tw-w-11/12 tw-ml-auto tw-mr-auto tw-rounded-lg tw-z-10">
       <p class="tw-text-center tw-text-white tw-font-extrabold tw-h-fit tw-self-center tw-p-2">
         In 2023, I successfully completed my academic journey at <span class="tw-text-orange-500 cool-bold-font">Cal
           State University, Fullerton,</span>
@@ -213,35 +222,35 @@
   <div id="carouselExampleIndicators" class="carousel slide tw-max-w-screen-lg tw-ml-auto tw-mr-auto tw-mb-2">
     <div class="carousel-inner">
       <div class="carousel-item active parent">
-        <div id="bucket-buddy" class="card tw-ml-auto tw-mr-auto tw-w-3/4 tw-bg-transparent">
+        <div id="bucket-buddy" class="card tw-ml-auto tw-mr-auto tw-w-3/4 tw-bg-transparent tw-border-transparent">
           <img src="/Static/bucket-buddy-home.webp" class="card-img-top" alt="...">
-          <div class="card-body star-wars-parent tw-pt-0 tw-pb-0">
-            <h1
-              class="card-title tw-text-center tw-font-bold tw-text-blue-400 tw-block normal star-wars-font tw-text-lg sm:tw-text-xl md:tw-text-2xl lg:tw-text-3xl">
+          <div class="card-body star-wars-parent tw-pt-0 tw-pb-0 ">
+            <h4
+              class="card-title tw-text-center tw-font-bold tw-text-blue-400 tw-block normal star-wars-font tw-text-lg sm:tw-text-xl md:tw-text-2xl lg:tw-text-3xl tw-pb-0 tw-mb-0">
               Bucket Buddy
-            </h1>
-            <p class="star-wars-text tw-text-center tw-text-yellow-400 tw-text-base sm:tw-text-lg md:tw-text-xl tw-h-auto">
+            </h4>
+            <p class="star-wars-text-scroll tw-text-center tw-text-yellow-400 tw-text-base sm:tw-text-lg md:tw-text-xl tw-h-auto hidden tw-transition-all tw-duration-12500 tw-ease-linear" id="star-wars-text">
               A web app that allows users to organize their
               life by giving them a simple way to
               create lists that can help them keep track of tasks they would like to complete. Bucket Buddy is
               designed to help individuals who struggle with managing their goals.
             </p>
-          </div>
-          <a href="https://github.com/JuanSierra99/BucketBuddy"
-            class="tw-flex tw-items-center tw-max-w-fit tw-ml-auto tw-mr-auto">
+            <a href="https://github.com/JuanSierra99/BucketBuddy"
+            class="tw-flex tw-items-center tw-max-w-fit tw-ml-auto tw-mr-auto hidden tw-transition-opacity tw-delay-12500 tw-duration-1000 tw-opacity-0">
             <img src="./Static/github.svg" class="tw-h-6 sm:tw-h-7 md:tw-h-8 lg:tw-h-10 xl:tw-h-11 2xl:tw-h-12">
             <p class="tw-ml-1 tw-text-white hover:tw-text-red-500">source code</p>
           </a>
+          </div>
         </div>
       </div>
       <div class="carousel-item">
-        <div id="decibel-warrior" class="card tw-ml-auto tw-mr-auto tw-w-3/4 tw-bg-transparent">
+        <div id="decibel-warrior" class="card tw-ml-auto tw-mr-auto tw-w-3/4 tw-bg-transparent tw-border-transparent">
           <img src="/Static/decibel-warrior.webp" class="card-img-top" alt="...">
           <div class="card-body star-wars-parent tw-pt-0 tw-pb-0">
-            <h1
-              class="card-title tw-text-center tw-font-bold tw-text-blue-400 tw-block normal star-wars-font tw-text-lg sm:tw-text-xl md:tw-text-2xl lg:tw-text-3xl">
+            <h4
+              class="card-title tw-text-center tw-font-bold tw-text-blue-400 tw-block normal star-wars-font tw-text-lg sm:tw-text-xl md:tw-text-2xl lg:tw-text-3xl tw-pb-0 tw-mb-0">
               Decibel Warrior
-            </h1>
+            </h4>
             <p class="star-wars-text tw-text-center tw-text-yellow-400 tw-text-base sm:tw-text-lg md:tw-text-xl tw-h-auto">
               The thrilling mobile app that keeps you on your
               toes! Keep your finger within the moving radius, or face the hilarious consequence of an audio clip
@@ -257,13 +266,13 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div id="film-website" class="card tw-ml-auto tw-mr-auto tw-w-3/4 tw-bg-transparent">
+        <div id="film-website" class="card tw-ml-auto tw-mr-auto tw-w-3/4 tw-bg-transparent tw-border-transparent">
           <img src="/Static/film-website.webp" class="card-img-top" alt="...">
           <div class="card-body star-wars-parent tw-pt-0 tw-pb-0">
-            <h1
-              class="card-title tw-text-center tw-font-bold tw-text-blue-400 tw-block normal star-wars-font tw-text-lg sm:tw-text-xl md:tw-text-2xl lg:tw-text-3xl">
+            <h4
+              class="card-title tw-text-center tw-font-bold tw-text-blue-400 tw-block normal star-wars-font tw-text-lg sm:tw-text-xl md:tw-text-2xl lg:tw-text-3xl tw-pb-0 tw-mb-0">
               Ai Film
-            </h1>
+            </h4>
             <p class="star-wars-text tw-text-center tw-text-yellow-400 tw-text-base sm:tw-text-lg md:tw-text-xl tw-h-auto">
               A web app for maintaining a collection of
               your favorite film photos. The
@@ -280,13 +289,13 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div id="portfolio" class="card tw-ml-auto tw-mr-auto tw-w-3/4 tw-bg-transparent">
+        <div id="portfolio" class="card tw-ml-auto tw-mr-auto tw-w-3/4 tw-bg-transparent tw-border-transparent">
           <img src="/Static/portfolio-project.webp" class="card-img-top" alt="...">
           <div class="card-body star-wars-parent tw-pt-0 tw-pb-0">
-            <h1
-              class="card-title tw-text-center tw-font-bold tw-text-blue-400 tw-block normal star-wars-font tw-text-lg sm:tw-text-xl md:tw-text-2xl lg:tw-text-3xl">
+            <h4
+              class="card-title tw-text-center tw-font-bold tw-text-blue-400 tw-block normal star-wars-font tw-text-lg sm:tw-text-xl md:tw-text-2xl lg:tw-text-3xl tw-pb-0 tw-mb-0">
               Web Portfolio
-            </h1>
+            </h4>
             <p class="star-wars-text tw-text-center tw-text-yellow-400 tw-text-base sm:tw-text-lg md:tw-text-xl tw-h-auto">
                 My custom portfolio that i created to showcase several of my projects, and talk a little about myself. 
                 Everything on this page are things that describe who i am, from the photos i chose, to the background i applied, to the colors i selected. 
