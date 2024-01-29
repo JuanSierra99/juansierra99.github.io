@@ -22,6 +22,38 @@
       transform: translateY(0);
     }
 
+    .star-background {
+      background-image: url(./Static/static-stars.png);
+    }
+
+    .twinkle-stars {
+      z-index: -9999;
+      position: fixed;
+      pointer-events: none;
+      background-image: url(./Static/twinkle_stars.png);
+      background-repeat: repeat;
+      animation: twinkle 1.5s ease-out none infinite alternate;
+    }
+
+    @keyframes twinkle {
+      from {
+        opacity: 40%;
+      }
+
+      to {
+        opacity: 100%;
+      }
+    }
+
+    .star-wars-parent {
+      perspective: 1000px;
+    }
+
+    .star-wars-text {
+      transform: rotateX(50deg);
+      transform-origin: 0% 20%;
+    }
+
     .clip-circle {
       clip-path: circle(39% at center)
     }
@@ -31,9 +63,17 @@
       src: url(./Static/fonts/ChakraPetch-Regular.ttf);
     }
 
+    .cool-font {
+      font-family: 'cool-font';
+    }
+
     @font-face {
       font-family: 'cool-bold-font';
       src: url(./Static/fonts/ChakraPetch-Bold.ttf);
+    }
+
+    .cool-bold-font {
+      font-family: "cool-bold-font";
     }
 
     @font-face {
@@ -41,21 +81,17 @@
       src: url(./Static/fonts/Lemon-Regular.ttf);
     }
 
-    .cool-font {
-      font-family: 'cool-font';
-    }
-
-    .cool-bold-font {
-      font-family: "cool-bold-font";
-    }
-
-    .line-breathing{
-      height: 70px;
-      border-radius: 50%;
-    }
-
-    .lemon-font{
+    .lemon-font {
       font-family: "lemon-font";
+    }
+
+    @font-face {
+      font-family: 'star-wars';
+      src: url(./Static/fonts/star-wars.ttf);
+    }
+
+    .star-wars-font {
+      font-family: 'star-wars';
     }
 
     .inverted-film {
@@ -81,7 +117,9 @@
 </head>
 
 <body
-  class="tw-w-screen tw-text-xs sm:tw-text-sm md:tw-text-base lg:tw-text-2xl xl:tw-text-4xl tw-pt-0 cool-font tw-bg-gray-900">
+  class="tw-w-screen tw-text-xs sm:tw-text-sm md:tw-text-base lg:tw-text-2xl xl:tw-text-4xl tw-pt-0 cool-font tw-bg-gray-900 star-background">
+  <div class="twinkle-stars tw-h-full tw-w-full">
+  </div>
   <nav
     class="navbar tw-z-30 md:tw-hidden tw-w-11/12 tw-ml-auto tw-mr-auto tw-mt-5 tw-rounded-lg tw-bg-opacity-60 tw-bg-gray-800">
     <div class="container-fluid">
@@ -97,7 +135,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link tw-text-white hover:tw-text-yellow-400" aria-current="page"
-            href="#projects-section">Projects</a>
+              href="#projects-section">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link tw-text-white hover:tw-text-yellow-400" href="#about-me-section">About</a>
@@ -128,118 +166,141 @@
       </li>
     </ul>
   </nav>
-
   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
     data-bs-smooth-scroll="true" class="scrollspy-example rounded-2" tabindex="0">
-    <div class="tw-mt-2 tw-mb-2">
-      <p class="tw-text-white tw-text-center">CONTACT ME:</p>
-      <div class="tw-flex tw-justify-evenly">
-        <div class="">
-          <a href="https://www.linkedin.com/in/juan-jr-sierra" class=""><img src="./Static/linkedin.svg"
-              class="tw-h-6 sm:tw-h-7 lg:tw-h-10"></a>
-        </div>
-
+    <div class="tw-m-4">
+      <div class="tw-flex tw-flex-row tw-justify-around">
+        <a href="https://www.linkedin.com/in/juan-jr-sierra" class=""><img src="./Static/linkedin.svg"
+            class="tw-h-6 sm:tw-h-7 lg:tw-h-10"></a>
         <a href="./Static/Fullstack-Resume.pdf" download="Juan-Sierra-Resume.pdf" class=""><img
             src="./Static/file-solid.svg" class="tw-h-6 sm:tw-h-8 lg:tw-h-10"></a>
         <a href="https://github.com/JuanSierra99" class=""><img src="./Static/github.svg"
             class="tw-h-6 sm:tw-h-8 lg:tw-h-10"></a>
       </div>
     </div>
-
-    <div id="education-container" class="tw-flex tw-flex-col tw-pb-2 tw-relative">
-      <h4 id="education-section"
-        class="tw-text-2xl sm:tw-text-4xl lg:tw-text-6xl tw-text-center tw-text-white cool-bold-font tw-font-extrabold tw-mb-2">
-        EDUCATION
-      </h4>
-      <h id="im-a-titan" class="tw-text-blue-600 tw-text-xl sm:tw-text-3xl tw-text-center tw-block">A
-        PROUD
-      </h>
-      <h id="im-a-titan"
-        class="tw-text-6xl sm:tw-text-9xl tw-text-center tw-font-extrabold tw-block tw-text-orange-500 cool-bold-font">
-        TITAN!</h>
-      <img src="./Static/titan.webp"
-        class="tw-w-4/6 sm:tw-w-3/4 md:tw-max-w-screen-md tw-translate-y-1/2 hidden tw-transition-all tw-duration-2500 tw-relative tw-z-0 tw-ml-auto tw-mr-auto" />
-      <div
-        class="tw-overflow-scroll tw-bg-gray-800 tw-flex-1 tw-w-11/12 tw-ml-auto tw-mr-auto tw-rounded-lg tw-z-10 shad">
-        <p class="tw-text-center tw-text-white tw-font-extrabold tw-h-fit tw-self-center tw-p-2">
-          In 2023, I successfully completed my academic journey at <span class="tw-text-orange-500 cool-bold-font">Cal
-            State University, Fullerton,</span>
-          graduating with distinction and achieving a GPA of 3.6. I have earned a <span
-            class="tw-text-blue-600 cool-bold-font">Bachelor's degree in
-            Computer
-            Science,</span> marking a significant accomplishment in my academic career.
-        </p>
-      </div>
-    </div>
-
-    <h4 id="projects-section"
-      class="tw-text-white tw-text-center tw-text-2xl sm:tw-text-4xl lg:tw-text-6xl tw-mb-2 cool-bold-font tw-font-extrabold">
-      PROJECTS
+  </div>
+  <div id="education-container" class="tw-flex tw-flex-col tw-pb-2 tw-relative">
+    <h4 id="education-section"
+      class="tw-text-2xl sm:tw-text-4xl lg:tw-text-5xl tw-text-center tw-text-white  cool-bold-font tw-font-extrabold tw-mb-2 ">
+      EDUCATION
     </h4>
-    <div id="carouselExampleIndicators" class="carousel slide tw-max-w-screen-lg tw-ml-auto tw-mr-auto tw-mb-2">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div id="BucketBuddy">
-            <div class="card tw-ml-auto tw-mr-auto tw-w-3/4 ">
-              <img src="/Static/bucket-buddy-home.webp" class="card-img-top" alt="...">
-              <div class="card-body tw-bg-gray-800 tw-text-white">
-                <h5 class="card-title tw-font-bold">Bucket Buddy</h5>
-                <p class="card-text tw-line-clamp-5 tw-overflow-scroll">A web app that allows users to organize their
-                  life by giving them a simple way to
-                  create lists that can help them keep track of tasks they would like to complete. Bucket Buddy is
-                  designed to help individuals who struggle with managing their goals.</p>
-                <a href="https://github.com/JuanSierra99/BucketBuddy"
-                  class="tw-flex tw-items-center tw-max-w-fit tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-p-1 tw-mt-1 tw-rounded-2xl tw-ml-auto tw-mr-auto"><img
-                    src="./Static/github.svg" class="tw-h-4 sm:tw-h-8 md:tw-h-9 lg:tw-h-10 xl:tw-h-11 2xl:tw-h-12">
-                  <p class="tw-ml-1">source code</p>
-                </a>
-              </div>
-              <div class="tw-hidden md:tw-block">
-              </div>
-            </div>
+    <h id="im-a-titan" class="tw-text-blue-600 tw-text-xl sm:tw-text-3xl tw-text-center tw-block">
+      A PROUD
+    </h>
+    <h id="im-a-titan"
+      class="tw-text-6xl sm:tw-text-9xl tw-text-center tw-font-extrabold tw-block tw-text-orange-500 cool-bold-font">
+      TITAN!</h>
+    <img src="./Static/titan.webp"
+      class="tw-w-4/6 sm:tw-w-3/4 md:tw-max-w-screen-md tw-translate-y-1/2 hidden tw-transition-all tw-duration-2500 tw-relative tw-z-0 tw-ml-auto tw-mr-auto" />
+    <div
+      class="tw-overflow-scroll tw-bg-gray-800 tw-flex-1 tw-w-11/12 tw-ml-auto tw-mr-auto tw-rounded-lg tw-z-10 shad">
+      <p class="tw-text-center tw-text-white tw-font-extrabold tw-h-fit tw-self-center tw-p-2">
+        In 2023, I successfully completed my academic journey at <span class="tw-text-orange-500 cool-bold-font">Cal
+          State University, Fullerton,</span>
+        graduating with distinction and achieving a GPA of 3.6. I have earned a <span
+          class="tw-text-blue-600 cool-bold-font">Bachelor's degree in
+          Computer
+          Science,</span> marking a significant accomplishment in my academic career.
+      </p>
+    </div>
+  </div>
+
+  <h4 id="projects-section"
+    class="tw-text-white tw-text-center tw-text-2xl sm:tw-text-4xl lg:tw-text-5xl tw-mb-2 cool-bold-font tw-font-extrabold">
+    PROJECTS
+  </h4>
+
+  <div id="carouselExampleIndicators" class="carousel slide tw-max-w-screen-lg tw-ml-auto tw-mr-auto tw-mb-2">
+    <div class="carousel-inner">
+      <div class="carousel-item active parent">
+        <div id="bucket-buddy" class="card tw-ml-auto tw-mr-auto tw-w-3/4 tw-bg-transparent">
+          <img src="/Static/bucket-buddy-home.webp" class="card-img-top" alt="...">
+          <div class="card-body star-wars-parent tw-pt-0 tw-pb-0">
+            <h1
+              class="card-title tw-text-center tw-font-bold tw-text-blue-400 tw-block normal star-wars-font tw-text-lg sm:tw-text-xl md:tw-text-2xl lg:tw-text-3xl">
+              Bucket Buddy
+            </h1>
+            <p class="star-wars-text tw-text-center tw-text-yellow-400 tw-text-base sm:tw-text-lg md:tw-text-xl tw-h-auto">
+              A web app that allows users to organize their
+              life by giving them a simple way to
+              create lists that can help them keep track of tasks they would like to complete. Bucket Buddy is
+              designed to help individuals who struggle with managing their goals.
+            </p>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div id="decibel-warrior">
-            <div class="card tw-ml-auto tw-mr-auto tw-w-3/4">
-              <img src="/Static/decibel-warrior.webp" class="card-img-top" alt="...">
-              <div class="card-body tw-bg-gray-800 tw-text-white">
-                <h5 class="card-title tw-font-bold">Decibel Warrior</h5>
-                <p class="card-text tw-line-clamp-5 tw-overflow-scroll">The thrilling mobile app that keeps you on your
-                  toes! Keep your finger within the moving radius, or face the hilarious consequence of an audio clip
-                  featuring a man's uproarious yelling. Stay sharp, stay entertained, and stay on the screen with
-                  "Decible Warrior"!</p>
-                <a href="https://github.com/JuanSierra99/decibel_warrior"
-                  class="tw-flex tw-items-center tw-max-w-fit tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-min-w-1/2 tw-justify-between tw-p-1 tw-rounded-2xl tw-mt-1 tw-ml-auto tw-mr-auto"><img
-                    src="./Static/github.svg" class="tw-h-4 sm:tw-h-8 md:tw-h-9 lg:tw-h-10 xl:tw-h-11 2xl:tw-h-12">
-                  <p class="tw-ml-1">source code</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div id="film-website">
-            <div class="card tw-block tw-ml-auto tw-mr-auto tw-w-3/4">
-              <img src="/Static/film-website.webp" class="card-img-top" alt="...">
-              <div class="card-body tw-bg-gray-800 tw-text-white">
-                <h5 class="card-title tw-font-bold">Film Website</h5>
-                <p class="card-text tw-line-clamp-5 tw-overflow-scroll">A web application that maintain a collection of
-                  your favorite film photos. The
-                  backend api is built with python and uses machine learning for object recognition, Numpy for image
-                  masking, and openai api for image replacement using artifical intelligence. Simple to use, and
-                  pleasent to view.
-                </p>
-                <a href="https://github.com/JuanSierra99/Film-Site"
-                  class="tw-flex tw-items-center tw-max-w-fit tw-bg-gray-900 tw-border-4 tw-border-gray-900 tw-min-w-1/2 tw-justify-between tw-p-1 tw-rounded-2xl tw-mt-1 tw-ml-auto tw-mr-auto"><img
-                    src="./Static/github.svg" class="tw-h-4 sm:tw-h-8 md:tw-h-9 lg:tw-h-10 xl:tw-h-11 2xl:tw-h-12">
-                  <p class="tw-ml-1">source code</p>
-                </a>
-              </div>
-            </div>
-          </div>
+          <a href="https://github.com/JuanSierra99/BucketBuddy"
+            class="tw-flex tw-items-center tw-max-w-fit tw-ml-auto tw-mr-auto">
+            <img src="./Static/github.svg" class="tw-h-6 sm:tw-h-7 md:tw-h-8 lg:tw-h-10 xl:tw-h-11 2xl:tw-h-12">
+            <p class="tw-ml-1 tw-text-white hover:tw-text-red-500">source code</p>
+          </a>
         </div>
       </div>
+      <div class="carousel-item">
+        <div id="decibel-warrior" class="card tw-ml-auto tw-mr-auto tw-w-3/4 tw-bg-transparent">
+          <img src="/Static/decibel-warrior.webp" class="card-img-top" alt="...">
+          <div class="card-body star-wars-parent tw-pt-0 tw-pb-0">
+            <h1
+              class="card-title tw-text-center tw-font-bold tw-text-blue-400 tw-block normal star-wars-font tw-text-lg sm:tw-text-xl md:tw-text-2xl lg:tw-text-3xl">
+              Decibel Warrior
+            </h1>
+            <p class="star-wars-text tw-text-center tw-text-yellow-400 tw-text-base sm:tw-text-lg md:tw-text-xl tw-h-auto">
+              The thrilling mobile app that keeps you on your
+              toes! Keep your finger within the moving radius, or face the hilarious consequence of an audio clip
+              featuring a man's uproarious yelling. Stay sharp, stay entertained, and stay on the screen with
+              "Decible Warrior"!
+            </p>
+          </div>
+          <a href="https://github.com/JuanSierra99/BucketBuddy"
+            class="tw-flex tw-items-center tw-max-w-fit tw-ml-auto tw-mr-auto">
+            <img src="./Static/github.svg" class="tw-h-6 sm:tw-h-7 md:tw-h-8 lg:tw-h-10 xl:tw-h-11 2xl:tw-h-12">
+            <p class="tw-ml-1 tw-text-white hover:tw-text-red-500">source code</p>
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div id="film-website" class="card tw-ml-auto tw-mr-auto tw-w-3/4 tw-bg-transparent">
+          <img src="/Static/film-website.webp" class="card-img-top" alt="...">
+          <div class="card-body star-wars-parent tw-pt-0 tw-pb-0">
+            <h1
+              class="card-title tw-text-center tw-font-bold tw-text-blue-400 tw-block normal star-wars-font tw-text-lg sm:tw-text-xl md:tw-text-2xl lg:tw-text-3xl">
+              Ai Film
+            </h1>
+            <p class="star-wars-text tw-text-center tw-text-yellow-400 tw-text-base sm:tw-text-lg md:tw-text-xl tw-h-auto">
+              A web app for maintaining a collection of
+              your favorite film photos. The
+              custom api is built with python and uses machine learning for object recognition, Numpy for image
+              masking, and openai api for image editing using artifical intelligence. Simple to use, and
+              pleasent to view.
+            </p>
+          </div>
+          <a href="https://github.com/JuanSierra99/BucketBuddy"
+            class="tw-flex tw-items-center tw-max-w-fit tw-ml-auto tw-mr-auto">
+            <img src="./Static/github.svg" class="tw-h-6 sm:tw-h-7 md:tw-h-8 lg:tw-h-10 xl:tw-h-11 2xl:tw-h-12">
+            <p class="tw-ml-1 tw-text-white hover:tw-text-red-500">source code</p>
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div id="portfolio" class="card tw-ml-auto tw-mr-auto tw-w-3/4 tw-bg-transparent">
+          <img src="/Static/portfolio-project.webp" class="card-img-top" alt="...">
+          <div class="card-body star-wars-parent tw-pt-0 tw-pb-0">
+            <h1
+              class="card-title tw-text-center tw-font-bold tw-text-blue-400 tw-block normal star-wars-font tw-text-lg sm:tw-text-xl md:tw-text-2xl lg:tw-text-3xl">
+              Web Portfolio
+            </h1>
+            <p class="star-wars-text tw-text-center tw-text-yellow-400 tw-text-base sm:tw-text-lg md:tw-text-xl tw-h-auto">
+                My custom portfolio that i created to showcase several of my projects, and talk a little about myself. 
+                Everything on this page are things that describe who i am, from the photos i chose, to the background i applied, to the colors i selected. 
+            </p>
+          </div>
+          <a href="https://github.com/JuanSierra99/BucketBuddy"
+            class="tw-flex tw-items-center tw-max-w-fit tw-ml-auto tw-mr-auto">
+            <img src="./Static/github.svg" class="tw-h-6 sm:tw-h-7 md:tw-h-8 lg:tw-h-10 xl:tw-h-11 2xl:tw-h-12">
+            <p class="tw-ml-1 tw-text-white hover:tw-text-red-500">source code</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -257,6 +318,8 @@
           aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
       </div>
     </div>
 
@@ -285,8 +348,9 @@
       </div>
 
       <div class="tw-relative tw-overflow-scroll tw-overflow-y-hidden tw-flex tw-bg-yellow-50">
-        <h4 class="tw-text-red-600 sm:tw-text-2xl lg:tw-text-4xl tw-mt-auto tw-mb-auto tw-font-extrabold tw-ml-2">
-          <span class="lemon-font">BUBBALICOUS</span> IS HIS <span class="tw-text-green-700 lemon-font">NAME</span>.
+        <h4
+          class="tw-text-red-600 sm:tw-text-2xl lg:tw-text-4xl tw-mt-auto tw-mb-auto tw-font-extrabold tw-ml-2 ">
+          <span class="lemon-font">BUBBALICOUS,</span> <span class="tw-text-green-700 lemon-font">IS HIS NAME</span>
         </h4>
         <img src="/Static/looking-at-angels-square.webp"
           class="tw-w-auto tw-h-1/4 tw-transition-all tw-duration-1000 tw-ease-out tw-translate-y-1/2 hidden clip-circle"
@@ -307,19 +371,18 @@
         PRESS THIS BIG RED BUTTON !
       </button>
     </div>
-  </div>
-  <script src="./script.js"></script>
-  <script src="./Elevator.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Simple elevator usage.
-    var elementButton = document.getElementById('elevator');
-    var elevator = new Elevator({
-      element: elementButton,
-      mainAudio: 'Static/sounds/elevator_music.mov', //Music by Bensound.com/royalty-free-music License code: 8VBZ8HZARZAOVHDQ
-      endAudio: './Static/sounds/ding.mov'
-    });
-  </script>
+    <script src="./script.js"></script>
+    <script src="./Elevator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Simple elevator usage.
+      var elementButton = document.getElementById('elevator');
+      var elevator = new Elevator({
+        element: elementButton,
+        mainAudio: 'Static/sounds/elevator_music.mov', //Music by Bensound.com/royalty-free-music License code: 8VBZ8HZARZAOVHDQ
+        endAudio: './Static/sounds/ding.mov'
+      });
+    </script>
 </body>
 
 </html>
