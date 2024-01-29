@@ -717,6 +717,14 @@ video {
   width: 100vw;
 }
 
+.tw-w-10\/12 {
+  width: 83.333333%;
+}
+
+.tw-w-9\/12 {
+  width: 75%;
+}
+
 .tw-max-w-fit {
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -1127,6 +1135,14 @@ video {
     max-width: 768px;
   }
 
+  .md\:tw-max-w-screen-xl {
+    max-width: 1280px;
+  }
+
+  .md\:tw-max-w-screen-lg {
+    max-width: 1024px;
+  }
+
   .md\:tw-text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1184,6 +1200,21 @@ video {
     font-size: 3.75rem;
     line-height: 1;
   }
+
+  .lg\:tw-text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:tw-text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:tw-text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1194,6 +1225,26 @@ video {
   .xl\:tw-text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .xl\:tw-text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:tw-text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:tw-text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .xl\:tw-text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
