@@ -229,14 +229,14 @@
               class="card-title tw-text-center tw-font-bold tw-text-blue-400 tw-block normal star-wars-font tw-pb-0 tw-mb-0">
               Bucket Buddy
             </h4>
-            <p class="star-wars-text-scroll tw-text-center tw-text-yellow-400 tw-h-auto hidden tw-transition-all tw-duration-12500 tw-ease-linear" id="star-wars-text">
+            <p class="star-wars-text-scroll tw-text-center tw-text-yellow-400 tw-h-auto hidden tw-transition-all tw-duration-10000 tw-ease-linear" id="star-wars-text">
               A web app that allows users to organize their
               life by giving them a simple way to
               create lists that can help them keep track of tasks they would like to complete. Bucket Buddy is
               designed to help individuals who struggle with managing their goals.
             </p>
             <a href="https://github.com/JuanSierra99/BucketBuddy"
-            class="tw-flex tw-items-center tw-max-w-fit tw-ml-auto tw-mr-auto hidden tw-transition-opacity tw-delay-12500 tw-duration-1000 tw-opacity-0">
+            class="tw-flex tw-items-center tw-max-w-fit tw-ml-auto tw-mr-auto hidden tw-transition-opacity tw-delay-10000 tw-duration-1000 tw-opacity-0">
             <img src="./Static/github.svg" class="tw-h-6 sm:tw-h-7 md:tw-h-8 lg:tw-h-10 xl:tw-h-11 2xl:tw-h-12">
             <p class="tw-ml-1 tw-text-white hover:tw-text-red-500">source code</p>
           </a>
@@ -381,16 +381,24 @@
       </button>
     </div>
     <script src="./script.js"></script>
-    <script src="./Elevator.js"></script>
+    <script src="./elevator.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       // Simple elevator usage.
+      let html = document.querySelector('html');
       var elementButton = document.getElementById('elevator');
-      var elevator = new Elevator({
+        var elevator = new Elevator({
         element: elementButton,
         mainAudio: 'Static/sounds/elevator_music.mov', //Music by Bensound.com/royalty-free-music License code: 8VBZ8HZARZAOVHDQ
-        endAudio: './Static/sounds/ding.mov'
-      });
+        endAudio: './Static/sounds/ding.mov',
+        startCallback: function() {
+              html.style.scrollBehavior = 'auto';
+            },
+
+            endCallback: function() {
+              html.style.scrollBehavior = '';
+            }
+      });      
     </script>
 </body>
 
