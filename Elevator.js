@@ -14,20 +14,23 @@ var Elevator = function (options) {
 
   // Elements
   var body = null;
+
   // Scroll vars
   var animation = null;
-  var duration = 7500; // ms
-  var customDuration = true;
+  var duration = null; // ms
+  var customDuration = false;
   var startTime = null;
   var startPosition = null;
   var endPosition = 0;
   var targetElement = null;
   var verticalPadding = null;
   var elevating = false;
+
   var startCallback;
   var mainAudio;
   var endAudio;
   var endCallback;
+
   var that = this;
 
   /**
