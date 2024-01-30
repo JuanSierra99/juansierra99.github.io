@@ -693,6 +693,10 @@ video {
   width: 50%;
 }
 
+.tw-w-10\/12 {
+  width: 83.333333%;
+}
+
 .tw-w-11\/12 {
   width: 91.666667%;
 }
@@ -715,14 +719,6 @@ video {
 
 .tw-w-screen {
   width: 100vw;
-}
-
-.tw-w-10\/12 {
-  width: 83.333333%;
-}
-
-.tw-w-9\/12 {
-  width: 75%;
 }
 
 .tw-max-w-fit {
@@ -901,16 +897,6 @@ video {
   line-height: 1;
 }
 
-.tw-text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.tw-text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .tw-text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -919,11 +905,6 @@ video {
 .tw-text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.tw-text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .tw-font-bold {
@@ -1022,12 +1003,12 @@ video {
   transition-duration: 1000ms;
 }
 
-.tw-duration-12500 {
-  transition-duration: 12500ms;
-}
-
 .tw-duration-2500 {
   transition-duration: 2500ms;
+}
+
+.tw-duration-10000 {
+  transition-duration: 10000ms;
 }
 
 .tw-ease-linear {
@@ -1102,19 +1083,9 @@ video {
     line-height: 1;
   }
 
-  .sm\:tw-text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .sm\:tw-text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .sm\:tw-text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
 
@@ -1131,31 +1102,17 @@ video {
     height: 2rem;
   }
 
-  .md\:tw-max-w-screen-md {
-    max-width: 768px;
-  }
-
-  .md\:tw-max-w-screen-xl {
-    max-width: 1280px;
-  }
-
   .md\:tw-max-w-screen-lg {
     max-width: 1024px;
   }
 
-  .md\:tw-text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .md\:tw-max-w-screen-md {
+    max-width: 768px;
   }
 
   .md\:tw-text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .md\:tw-text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
 
@@ -1181,11 +1138,6 @@ video {
     line-height: 2rem;
   }
 
-  .lg\:tw-text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .lg\:tw-text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1201,45 +1153,15 @@ video {
     line-height: 1;
   }
 
-  .lg\:tw-text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .lg\:tw-text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:tw-text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 }
 
 @media (min-width: 1280px) {
   .xl\:tw-h-11 {
     height: 2.75rem;
-  }
-
-  .xl\:tw-text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .xl\:tw-text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .xl\:tw-text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .xl\:tw-text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
   }
 
   .xl\:tw-text-xl {
