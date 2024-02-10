@@ -608,6 +608,10 @@ video {
   z-index: 50;
 }
 
+.tw-z-20 {
+  z-index: 20;
+}
+
 .tw-m-4 {
   margin: 1rem;
 }
