@@ -11,14 +11,12 @@ const observer = new IntersectionObserver((target) => {
 }, null);
 
 const header_text = document.getElementById("film-text");
-const parent_container = header_text.parentElement;
 const process_image = new IntersectionObserver(
   (inverted_images) => {
     console.log(inverted_images);
     inverted_images.forEach((image) => {
       const imageId = image.target.id;
       if (image.isIntersecting) {
-        parent_container.classList.add("repaint");
         switch (imageId) {
           case "image1":
             header_text.textContent = "I LOVE TAKING FILM PHOTOS :)";
